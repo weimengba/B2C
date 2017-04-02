@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.PlatGoodsAttrValueDAO">
+<!-- 查询所有商品属性 -->
+	<select id="selectGoodsAttrValue" resultType="map">
+		SELECT
+			goods_attr_value.id         as id               , 
+			goods.id                    as gid              ,
+			goods_attr.id               as gaid             ,         
+			goods.title                 as goodsId          ,
+			goods_attr.title            as attrId           ,          
+			value                       as value            ,          
+			goods_attr_value.ctime      as ctime            ,          
+			goods_attr_value.utime      as utime            ,          
+			goods_attr_value.is_del     as isDel                 
+		FROM
+		goods_attr_value_v AS goods_attr_value LEFT JOIN goods_v AS goods ON goods_attr_value.goods_id=goods.id
+		LEFT JOIN goods_attr_v AS goods_attr on goods_attr_value.attr_id=goods_attr.id
+		<where>
+			<if test="value != null and value !='' ">
+				and value like concat('%',#{value},'%')
+			</if>
+		</where>		
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+	</select>
+	
+	<!-- 增加商品属性值 -->
+	<insert id="insertAttrValue" parameterType="map"
+		useGeneratedKeys="true" keyProperty="id">
+		insert into om_goods_attr_value (
+		<if test="goodsId != null and goodsId !='' ">
+			goods_id,
+		</if>
+		<if test="attrId != null and attrId !='' ">
+			attr_id,
+		</if>
+		<if test="value != null and value !='' ">
+			value,
+		</if>
+		ctime
+		)
+		values (
+		<if test="goodsId != null and goodsId !='' ">
+			#{goodsId},
+		</if>
+		<if test="attrId != null and attrId !='' ">
+			#{attrId},
+		</if>
+		<if test="value != null and value !='' ">
+			#{value},
+		</if>
+		now()
+		)
+	</insert>
+	
+	<!-- 修改商品属性值 -->
+	<update id="updateAttrValueById"  parameterType="map">
+		update om_goods_attr_value set 
+		<if test="goodsId != null and goodsId !='' ">
+			goods_id=#{goodsId},
+		</if>
+		<if test="attrId != null and attrId !='' ">
+			attr_id=#{attrId},
+		</if>
+		<if test="value != null and value !='' ">
+			value=#{value},
+		</if>
+		id=#{id}
+		where id=#{id}		
+	</update>
+	
+
+</mapper>

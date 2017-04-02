@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pub.dao.PubOrderItemDAO">
+			<select id="selectOrderItemByorderId" resultType="map">
+		select * from order_item_v
+	<where>								
+		 	<if test="order_id != null and order_id != '' ">
+				and order_id=#{order_id}
+			</if>
+		</where>								
+	</select>
+	
+	<insert id="insertOrderItem" parameterType="map">
+	INSERT INTO om_order_item(order_id,goods_id,goods_num,goods_price,ctime,is_del) 
+	VALUES(#{order_id},#{goods_id},#{goods_num},#{goods_price},NOW(),#{is_del})
+	</insert>
+	
+</mapper>

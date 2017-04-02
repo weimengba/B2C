@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/OnlineMall/!svn/ver/1141/code/server/om/WebContent/WEB-INF/jsp
+END
+t1.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/OnlineMall/!svn/ver/190/code/server/om/WebContent/WEB-INF/jsp/t1.jsp
+END
+orderList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/OnlineMall/!svn/ver/374/code/server/om/WebContent/WEB-INF/jsp/orderList.jsp
+END
+t4.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/OnlineMall/!svn/ver/280/code/server/om/WebContent/WEB-INF/jsp/t4.jsp
+END
+goods.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/OnlineMall/!svn/ver/344/code/server/om/WebContent/WEB-INF/jsp/goods.jsp
+END
+validateError.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/OnlineMall/!svn/ver/302/code/server/om/WebContent/WEB-INF/jsp/validateError.jsp
+END

@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/OnlineMall/!svn/ver/1161/code/server/om/resources/mapper
+END
+PubSysManager.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/OnlineMall/!svn/ver/346/code/server/om/resources/mapper/PubSysManager.xml
+END
+PubSysRolePermission.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/OnlineMall/!svn/ver/1116/code/server/om/resources/mapper/PubSysRolePermission.xml
+END
+Demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/OnlineMall/!svn/ver/890/code/server/om/resources/mapper/Demo.xml
+END
+PlatGoodsAttrValue.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/OnlineMall/!svn/ver/787/code/server/om/resources/mapper/PlatGoodsAttrValue.xml
+END
+PubGoodsType.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/OnlineMall/!svn/ver/875/code/server/om/resources/mapper/PubGoodsType.xml
+END
+PlatGoodsAttr.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/OnlineMall/!svn/ver/998/code/server/om/resources/mapper/PlatGoodsAttr.xml
+END
+PlatOrderPayment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/OnlineMall/!svn/ver/791/code/server/om/resources/mapper/PlatOrderPayment.xml
+END
+PlatGoodsCategory.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/OnlineMall/!svn/ver/810/code/server/om/resources/mapper/PlatGoodsCategory.xml
+END
+PubCustomerSns.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/OnlineMall/!svn/ver/292/code/server/om/resources/mapper/PubCustomerSns.xml
+END
+PlatReport.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/OnlineMall/!svn/ver/720/code/server/om/resources/mapper/PlatReport.xml
+END
+PlatCustomerCart.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/OnlineMall/!svn/ver/505/code/server/om/resources/mapper/PlatCustomerCart.xml
+END
+PlatGoods.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/OnlineMall/!svn/ver/936/code/server/om/resources/mapper/PlatGoods.xml
+END
+PlatOrder.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/OnlineMall/!svn/ver/440/code/server/om/resources/mapper/PlatOrder.xml
+END
+PubSysManagerRole.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/OnlineMall/!svn/ver/355/code/server/om/resources/mapper/PubSysManagerRole.xml
+END
+PubOrderHistory.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/OnlineMall/!svn/ver/121/code/server/om/resources/mapper/PubOrderHistory.xml
+END
+PubGoodsComment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/OnlineMall/!svn/ver/1128/code/server/om/resources/mapper/PubGoodsComment.xml
+END
+PlatSysPermission.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/OnlineMall/!svn/ver/658/code/server/om/resources/mapper/PlatSysPermission.xml
+END
+PlatCommonFile.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/OnlineMall/!svn/ver/910/code/server/om/resources/mapper/PlatCommonFile.xml
+END
+XXPlatSysManager.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/OnlineMall/!svn/ver/441/code/server/om/resources/mapper/XXPlatSysManager.xml
+END
+PlatOrderItem.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/OnlineMall/!svn/ver/143/code/server/om/resources/mapper/PlatOrderItem.xml
+END
+PlatCommonLog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/OnlineMall/!svn/ver/899/code/server/om/resources/mapper/PlatCommonLog.xml
+END
+PubGoodsCategory.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/OnlineMall/!svn/ver/875/code/server/om/resources/mapper/PubGoodsCategory.xml
+END
+PubOrderPayment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/OnlineMall/!svn/ver/1015/code/server/om/resources/mapper/PubOrderPayment.xml
+END
+PlatSysRole.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/OnlineMall/!svn/ver/660/code/server/om/resources/mapper/PlatSysRole.xml
+END
+PubGoods.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/OnlineMall/!svn/ver/1161/code/server/om/resources/mapper/PubGoods.xml
+END
+PubCustomerCart.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/OnlineMall/!svn/ver/1075/code/server/om/resources/mapper/PubCustomerCart.xml
+END
+PlatCustomer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/OnlineMall/!svn/ver/402/code/server/om/resources/mapper/PlatCustomer.xml
+END
+PubOrder.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/OnlineMall/!svn/ver/1048/code/server/om/resources/mapper/PubOrder.xml
+END
+Common.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/OnlineMall/!svn/ver/507/code/server/om/resources/mapper/Common.xml
+END
+PlatCustomerAddress.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/OnlineMall/!svn/ver/1067/code/server/om/resources/mapper/PlatCustomerAddress.xml
+END
+PlatSysManager.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/OnlineMall/!svn/ver/782/code/server/om/resources/mapper/PlatSysManager.xml
+END
+PlatSysRolePermission.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/OnlineMall/!svn/ver/966/code/server/om/resources/mapper/PlatSysRolePermission.xml
+END
+PlatGoodsType.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/OnlineMall/!svn/ver/636/code/server/om/resources/mapper/PlatGoodsType.xml
+END
+PubSysPermission.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/OnlineMall/!svn/ver/656/code/server/om/resources/mapper/PubSysPermission.xml
+END
+PubCommonFile.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/OnlineMall/!svn/ver/910/code/server/om/resources/mapper/PubCommonFile.xml
+END
+PubOrderItem.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/OnlineMall/!svn/ver/953/code/server/om/resources/mapper/PubOrderItem.xml
+END
+Weixin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/OnlineMall/!svn/ver/1044/code/server/om/resources/mapper/Weixin.xml
+END
+OrderView.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/OnlineMall/!svn/ver/765/code/server/om/resources/mapper/OrderView.xml
+END
+PlatCustomerSns.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/OnlineMall/!svn/ver/288/code/server/om/resources/mapper/PlatCustomerSns.xml
+END
+PubSysRole.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/OnlineMall/!svn/ver/755/code/server/om/resources/mapper/PubSysRole.xml
+END
+PubCustomer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/OnlineMall/!svn/ver/1116/code/server/om/resources/mapper/PubCustomer.xml
+END
+PlatSysManagerRole.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/OnlineMall/!svn/ver/735/code/server/om/resources/mapper/PlatSysManagerRole.xml
+END
+PubGoodsTypeAttrValue.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/OnlineMall/!svn/ver/875/code/server/om/resources/mapper/PubGoodsTypeAttrValue.xml
+END
+PubCustomerAddress.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/OnlineMall/!svn/ver/1144/code/server/om/resources/mapper/PubCustomerAddress.xml
+END
+PlatOrderHistory.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/OnlineMall/!svn/ver/800/code/server/om/resources/mapper/PlatOrderHistory.xml
+END
+PlatGoodsComment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/OnlineMall/!svn/ver/813/code/server/om/resources/mapper/PlatGoodsComment.xml
+END
+PubGoodsTypeAttr.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/OnlineMall/!svn/ver/875/code/server/om/resources/mapper/PubGoodsTypeAttr.xml
+END

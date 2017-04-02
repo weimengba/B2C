@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/OnlineMall/!svn/ver/1122/code/server/om/src/com/platform/service
+END
+PlatGoodsAttrSeviceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/OnlineMall/!svn/ver/934/code/server/om/src/com/platform/service/PlatGoodsAttrSeviceI.java
+END
+PlatGoodsCategorySeviceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/OnlineMall/!svn/ver/570/code/server/om/src/com/platform/service/PlatGoodsCategorySeviceI.java
+END
+PlatCustomerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/OnlineMall/!svn/ver/505/code/server/om/src/com/platform/service/PlatCustomerService.java
+END
+PlatGoodsSeviceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/OnlineMall/!svn/ver/934/code/server/om/src/com/platform/service/PlatGoodsSeviceI.java
+END
+XXPlatSysManagerServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/OnlineMall/!svn/ver/362/code/server/om/src/com/platform/service/XXPlatSysManagerServiceI.java
+END
+PlatGoodsTypeSeviceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/OnlineMall/!svn/ver/630/code/server/om/src/com/platform/service/PlatGoodsTypeSeviceI.java
+END
+CommonService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/OnlineMall/!svn/ver/1122/code/server/om/src/com/platform/service/CommonService.java
+END
+PlatCustomerServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/OnlineMall/!svn/ver/505/code/server/om/src/com/platform/service/PlatCustomerServiceI.java
+END
+BasePlatService.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/701/code/server/om/src/com/platform/service/BasePlatService.java
+END
+PlatOrderService.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/OnlineMall/!svn/ver/669/code/server/om/src/com/platform/service/PlatOrderService.java
+END
+PlatReportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/699/code/server/om/src/com/platform/service/PlatReportService.java
+END
+PlatGoodsCommentSevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/OnlineMall/!svn/ver/586/code/server/om/src/com/platform/service/PlatGoodsCommentSevice.java
+END
+PlatSysService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/OnlineMall/!svn/ver/966/code/server/om/src/com/platform/service/PlatSysService.java
+END
+CommonServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/OnlineMall/!svn/ver/796/code/server/om/src/com/platform/service/CommonServiceI.java
+END
+PlatGoodsAttrValueSevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/OnlineMall/!svn/ver/912/code/server/om/src/com/platform/service/PlatGoodsAttrValueSevice.java
+END
+PlatGoodsAttrSevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/OnlineMall/!svn/ver/934/code/server/om/src/com/platform/service/PlatGoodsAttrSevice.java
+END
+PlatOrderServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/669/code/server/om/src/com/platform/service/PlatOrderServiceI.java
+END
+PlatReportServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/OnlineMall/!svn/ver/699/code/server/om/src/com/platform/service/PlatReportServiceI.java
+END
+PlatGoodsCommentSeviceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/OnlineMall/!svn/ver/586/code/server/om/src/com/platform/service/PlatGoodsCommentSeviceI.java
+END
+PlatGoodsCategorySevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/OnlineMall/!svn/ver/570/code/server/om/src/com/platform/service/PlatGoodsCategorySevice.java
+END
+PlatSysServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/966/code/server/om/src/com/platform/service/PlatSysServiceI.java
+END
+XXPlatSysMangerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/OnlineMall/!svn/ver/362/code/server/om/src/com/platform/service/XXPlatSysMangerService.java
+END
+PlatGoodsSevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/934/code/server/om/src/com/platform/service/PlatGoodsSevice.java
+END
+PlatGoodsAttrValueSeviceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/OnlineMall/!svn/ver/628/code/server/om/src/com/platform/service/PlatGoodsAttrValueSeviceI.java
+END
+PlatGoodsTypeSevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/OnlineMall/!svn/ver/629/code/server/om/src/com/platform/service/PlatGoodsTypeSevice.java
+END

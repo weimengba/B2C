@@ -1,0 +1,82 @@
+#om-app .content{
+	top:40px;
+	background:#C0C0C0;
+}
+			
+#om-app .content .red{
+	width:100%;
+	height:150px;
+	background-image: url(../img/img_5.jpg);
+	background-repeat:no-repeat;
+}
+#om-app text{
+	display:block;
+	padding:35px 0 0 20px;
+	color:red;
+}
+
+#goodscar .content{
+	top: 50px;;
+}
+#goodscar .car{
+	width:100%;
+	height:100px;
+	background:pink;
+	border:1px solid red;
+}
+#goodscar .car .img{
+	width:20%;
+	height:3rem;
+	float:left;
+	margin-top:15px;
+	margin-left:15px;
+	border:1px solid red;
+}
+#goodscar .car img{
+	width:100%;
+	height:3rem;
+}
+#goodscar .car .top{
+	width:75%;
+	height:30px;
+	float:right;
+	margin-top:15px;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#goodscar .car .con{
+	width:75%;
+	height:40px;
+	float:right;
+	line-height:40px;
+	margin-top:10px;				
+}
+#goodscar .car .price{
+	color:red;
+	font-size:20px;
+}
+#goodscar .car .decrease{
+	padding:0px 5px 0px 5px;
+	border:1px solid red;
+	background:blue;
+}
+#goodscar .car .num{
+	padding:0 4px 0px 4px;
+	color:red;
+	border:1px solid red;
+}
+#goodscar .car .increase{
+	padding:0px 5px 0px 5px;
+	border:1px solid red;
+	background:blue;
+}
+#goodscar .sum{
+	color:red;
+	float:left;
+	margin-top:6px;
+}
+#goodscar .sumprice{
+	color:red;
+}

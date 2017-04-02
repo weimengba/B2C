@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pub.dao.PubGoodsCommentDAO">
+
+	<!-- 查询最近的商品评论 -->
+	<select id="selectGoodsCommentByGoodsId" resultType="map">
+		SELECT
+			gcv.id                  as id               , 
+			gcv.goods_id            as goodsId           ,
+			order_item_id       as orderItemId      ,   
+			ocv.nickname         as nickname       , 
+			ocv.headimg          as headimg         ,
+			gcv.content          as content         ,  
+			ocv.ctime               as ctime              
+		FROM
+		goods_comment_v as gcv left join om_customer as ocv on gcv.customer_id=ocv.id
+		<where>
+				<if test="id != null and id !='' ">
+					and gcv.goods_Id =#{id}
+				</if>
+				
+		</where> 
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>      
+		ORDER BY ctime DESC LIMIT 2
+	</select>
+	
+	<!-- 查询所有商品评论 -->
+	<select id="selectGoodsComment" resultType="map">
+		SELECT
+			gcv.id                  as id               , 
+			gcv.goods_id            as goodsId           ,  
+			order_item_id       as orderItemId      ,   
+			ocv.nickname         as nickname       , 
+			ocv.headimg          as headimg         ,
+			gcv.content          as content         ,  
+			ocv.ctime               as ctime              
+		FROM
+		goods_comment_v as gcv left join om_customer as ocv on gcv.customer_id=ocv.id
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+	</select>
+
+	
+	
+	<!-- 增加商品评论 -->
+	<insert id="insertGoodsComment" parameterType="map"
+		useGeneratedKeys="true" keyProperty="id">
+		insert into om_goods_comment (
+			<if test="orderItemId != null and orderItemId !='' ">
+				order_item_id,
+			</if>
+			<if test="customerId != null and customerId !='' ">
+				customer_id,
+			</if>
+			<if test="goodsId != null and goodsId !='' ">
+				goods_id,
+			</if>
+			<if test="star != null and star !='' ">
+				star,
+			</if>
+			<if test="content != null and content !='' ">
+				content,
+			</if>
+			<if test="state != null and state !='' ">
+				state,
+			</if>
+			ctime
+		)
+		values (
+			<if test="orderItemId != null and orderItemId !='' ">
+				#{orderItemId},
+			</if>
+			<if test="customerId != null and customerId !='' ">
+				#{customerId},
+			</if>
+			<if test="goodsId != null and goodsId !='' ">
+				#{goodsId},
+			</if>
+			<if test="star != null and star !='' ">
+				#{star},
+			</if>
+			<if test="content != null and content !='' ">
+				#{content},
+			</if>
+			<if test="state != null and state !='' ">
+				#{state},
+			</if>
+			now()
+		)
+	</insert>
+	
+	
+
+
+
+</mapper>

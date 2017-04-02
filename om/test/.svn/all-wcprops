@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/OnlineMall/!svn/ver/1161/code/server/om/test
+END
+TestJRedis.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/OnlineMall/!svn/ver/576/code/server/om/test/TestJRedis.java
+END
+组合模式.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/1150/code/server/om/test/%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F.java
+END
+RedisTemplateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/OnlineMall/!svn/ver/782/code/server/om/test/RedisTemplateTest.java
+END
+Json处理测试.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/OnlineMall/!svn/ver/355/code/server/om/test/Json%E5%A4%84%E7%90%86%E6%B5%8B%E8%AF%95.java
+END
+单例测试.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/1150/code/server/om/test/%E5%8D%95%E4%BE%8B%E6%B5%8B%E8%AF%95.java
+END
+加密解密测试.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/OnlineMall/!svn/ver/827/code/server/om/test/%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86%E6%B5%8B%E8%AF%95.java
+END
+GlobalDataUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/OnlineMall/!svn/ver/1119/code/server/om/test/GlobalDataUtilTest.java
+END
+TestDom4j.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/OnlineMall/!svn/ver/1138/code/server/om/test/TestDom4j.java
+END
+代理模式.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/1150/code/server/om/test/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F.java
+END
+原型模式.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/1150/code/server/om/test/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F.java
+END

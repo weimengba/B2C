@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pub.dao.PubGoodsDAO">
+
+
+	<!-- 根据ID 查询 -->
+	<select id="findGoods" parameterType="map" resultType="map">
+		SELECT
+			g.id               as id             ,           	
+			category_id      as categoryId     , 
+			c.path           as path           ,
+			c.type           as type           ,
+			title            as title          ,        
+			price            as price          ,        
+			market_price     as marketPrice    , 
+			quantity         as quantity       ,     
+			num              as num            ,          
+			brief            as brief          ,        
+			is_onsale        as isOnsale       
+		FROM
+		goods_v
+		AS g LEFT JOIN om_common_file AS c ON g.id=c.object_id 
+		<where>
+			<if test="categoryId != null and categoryId !='' ">
+				and category_id = #{categoryId}
+			</if>
+			<if test="title != null and title !='' ">
+				and title like concat('%',#{title},'%')
+			</if>
+			<if test="price != null and price !='' ">
+				and price like concat('%',#{price},'%')
+			</if>
+		</where>
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+		
+	</select>
+	<!-- 根据ID查询详情 -->
+	<select id="findGoodsDetail" parameterType="map" resultType="map">
+		
+		
+		SELECT
+			g.id               as id             , 
+			g.price            as price          ,
+			g.market_price     as marketPrice    ,
+			g.title            as title          ,
+			g.num              as num            ,
+			g.detail           as detail         ,
+			c.path             as path           ,
+			c.type             as type           ,
+			ga.title         as  titles            ,
+			v.value          as   value
+		FROM
+		om_goods 
+		as g LEFT JOIN om_goods_attr as ga ON g.type_id=ga.type_id
+		RIGHT JOIN om_goods_comment AS gc ON g.id=gc.goods_id
+		right join om_goods_attr_value as v on g.id = v.goods_id
+		LEFT JOIN om_common_file AS c ON g.id=c.object_id
+		<where>
+			<if test="id != null and id !='' ">
+				and g.id = #{id}
+			</if>
+		</where>
+		
+	</select>
+	
+	
+
+	<!-- 查询所有商品 -->
+	<select id="selectGoods" resultType="map">
+		SELECT
+			g.id               as id             ,  
+			c.type         	   as type           ,
+			c.path             as path           ,
+			g.category_id      as categoryId     ,  
+			g.type_id          as typeId         ,     
+			g.title            as title          ,        
+			g.price            as price          ,        
+			g.market_price     as marketPrice    , 
+			g.quantity         as quantity       ,     
+			g.num              as num            ,          
+			g.brief            as brief          ,        
+			g.is_onsale        as isOnsale         
+		FROM
+		goods_v
+		 AS g LEFT JOIN common_file_v AS c ON g.id=c.object_id 
+	</select>
+	
+	<!-- 条件查询商品 -->
+	<select id="findGoodsDynamic" resultType="map">
+		SELECT
+			id               as id             ,           	
+			category_id      as categoryId     , 
+			type_id          as typeId         ,     
+			title            as title          ,        
+			price            as price          ,        
+			market_price     as marketPrice    , 
+			quantity         as quantity       ,     
+			num              as num            ,          
+			brief            as brief          ,        
+			detail           as detail         ,       
+			is_onsale        as isOnsale       ,    
+			ctime            as ctime          ,        
+			utime            as utime          ,        
+			is_del           as isDel    
+		FROM
+		goods_v
+		<where>
+			<if test="title != null and title !='' ">
+				and title like concat('%',#{title},'%')
+			</if>
+			<if test="price != null and price !='' ">
+				and price like concat('%',#{price},'%')
+			</if>
+		</where>
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+	</select>
+	
+	
+	<!-- 增加商品 -->
+	<insert id="insertGoods" parameterType="map"
+		useGeneratedKeys="true" keyProperty="id">
+		insert into om_goods (
+			<if test="categoryId != null and categoryId !='' ">
+				category_id,
+			</if>
+			<if test="typeId != null and typeId !='' ">
+				type_id,
+			</if>
+			<if test="title != null and title !='' ">
+				title,
+			</if>
+			<if test="price != null and price !='' ">
+				price,
+			</if>
+			<if test="marketPrice != null and marketPrice !='' ">
+				market_price,
+			</if>
+			<if test="quantity != null and quantity !='' ">
+				quantity,
+			</if>
+			<if test="num != null and num !='' ">
+				num,
+			</if>
+			<if test="brief != null and brief !='' ">
+				brief,
+			</if>
+			<if test="detail != null and detail !='' ">
+				detail,
+			</if>
+			ctime
+		)
+		values (
+			<if test="categoryId != null and categoryId !='' ">
+				#{categoryId},
+			</if>
+			<if test="typeId != null and typeId !='' ">
+				#{typeId},
+			</if>
+			<if test="title != null and title !='' ">
+				#{title},
+			</if>
+			<if test="price != null and price !='' ">
+				#{price},
+			</if>
+			<if test="marketPrice != null and marketPrice !='' ">
+				#{marketPrice},
+			</if>
+			<if test="quantity != null and quantity !='' ">
+				#{quantity},
+			</if>
+			<if test="num != null and num !='' ">
+				#{num},
+			</if>
+			<if test="brief != null and brief !='' ">
+				#{brief},
+			</if>
+			<if test="detail != null and detail !='' ">
+				#{detail},
+			</if>
+			now()
+		)
+	</insert>
+	
+	<!-- 修改商品 -->
+	<update id="updateGoodsById"  parameterType="map">
+		update om_goods set 
+			<if test="categoryId != null and categoryId !='' ">
+				category_id=#{categoryId},
+			</if>
+			<if test="typeId != null and typeId !='' ">
+				type_id=#{typeId},
+			</if>
+			<if test="title != null and title !='' ">
+				title=#{title},
+			</if>
+			<if test="price != null and price !='' ">
+				price=#{price},
+			</if>
+			<if test="marketPrice != null and marketPrice !='' ">
+				market_price=#{marketPrice},
+			</if>
+			<if test="quantity != null and quantity !='' ">
+				quantity=#{quantity},
+			</if>
+			<if test="num != null and num !='' ">
+				num=#{num},
+			</if>
+			<if test="brief != null and brief !='' ">
+				brief=#{brief},
+			</if>
+			<if test="detail != null and detail !='' ">
+				detail=#{detail},
+			</if>
+			id=#{id}
+		where id=#{id}		
+	</update>
+
+
+
+	<select id="getGoodsDetailById" parameterType="map" resultType="map">
+		SELECT
+			g.id as id,
+			g.title as title,
+			g.brief as brief,
+			g.detail as detail,
+			g.price  as price,
+			f.path   as goodImg
+
+			FROM
+				goods_v g
+			left JOIN (select * from common_file_v where type='goodsPhoto') f ON g.id = f.object_id
+			WHERE
+				 g.id=#{id}
+	</select>
+</mapper>

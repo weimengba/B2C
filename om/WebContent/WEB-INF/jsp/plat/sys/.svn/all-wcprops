@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/OnlineMall/!svn/ver/966/code/server/om/WebContent/WEB-INF/jsp/plat/sys
+END
+permissionList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/OnlineMall/!svn/ver/808/code/server/om/WebContent/WEB-INF/jsp/plat/sys/permissionList.jsp
+END
+sysconfig.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/603/code/server/om/WebContent/WEB-INF/jsp/plat/sys/sysconfig.jsp
+END
+sysManagerList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/OnlineMall/!svn/ver/808/code/server/om/WebContent/WEB-INF/jsp/plat/sys/sysManagerList.jsp
+END
+validator.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/861/code/server/om/WebContent/WEB-INF/jsp/plat/sys/validator.jsp
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/OnlineMall/!svn/ver/938/code/server/om/WebContent/WEB-INF/jsp/plat/sys/login.jsp
+END
+managerRoleList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/OnlineMall/!svn/ver/739/code/server/om/WebContent/WEB-INF/jsp/plat/sys/managerRoleList.jsp
+END
+permission.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/OnlineMall/!svn/ver/815/code/server/om/WebContent/WEB-INF/jsp/plat/sys/permission.jsp
+END
+sysManager.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/OnlineMall/!svn/ver/808/code/server/om/WebContent/WEB-INF/jsp/plat/sys/sysManager.jsp
+END
+permissionrole.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/OnlineMall/!svn/ver/966/code/server/om/WebContent/WEB-INF/jsp/plat/sys/permissionrole.jsp
+END
+sysRoleList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/966/code/server/om/WebContent/WEB-INF/jsp/plat/sys/sysRoleList.jsp
+END
+sysRole.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/OnlineMall/!svn/ver/755/code/server/om/WebContent/WEB-INF/jsp/plat/sys/sysRole.jsp
+END
+sysdict.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/OnlineMall/!svn/ver/603/code/server/om/WebContent/WEB-INF/jsp/plat/sys/sysdict.jsp
+END

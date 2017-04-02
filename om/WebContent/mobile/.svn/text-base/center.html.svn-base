@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<title>电商</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="shortcut icon" href="/favicon.ico">
+
+		<!--SUI CSS-->
+		<link rel="stylesheet" href="assets/js/sui/sm.css">
+		<link rel="stylesheet" href="assets/js/sui/sm-extend.css">
+		<!--OM CSS-->
+		<link rel="stylesheet" href="assets/css/common.css">
+		<!--JS zepto,SUI全局配置config,百度地图API-->
+		<script type='text/javascript' src='assets/js/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/config.js' charset='utf-8'></script>
+
+	</head>
+
+	<body>
+		<div class="page-group">
+			<div class="page page-current" id="center">
+				<header class="bar bar-nav ">
+					<a class="button button-link button-nav pull-left back"> <span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>个人中心</h1>
+				</header>
+				<nav class="bar bar-tab">
+					<a class="tab-item external active" href="index.html">
+						<span class="icon icon-home"></span>
+						<span class="tab-label">首页</span>
+					</a>
+					<a class="tab-item external active" href="#">
+						<span class="icon icon-gift"></span>
+						<span class="tab-label">活动</span>
+					</a>
+					<a class="tab-item external" href="customercart.html">
+						<span class="icon icon-cart"></span>
+						<span class="tab-label">购物车</span>
+					</a>
+					<a class="tab-item external" href="center.html">
+						<span class="icon icon-me"></span>
+						<span class="tab-label">个人中心</span>
+					</a>
+				</nav>
+				<div class="content" id="center">
+					<ul id="loginYes" style="background-image:url(assets/img/background.jpg);">
+						<li class="#loginYes header"><a id="om-profile"><img id="center-header" src="" class="center-header-img"></a></li>
+						<li class="#loginYes text">
+							<div id="center-nickname" class="#loginYes text nickname"></div>
+							<div class="#loginYes text logintime">上次登录：2017-02-13 12:39</div>
+						</li>
+						<li class="#loginYes messageconfig">
+							<div>
+								<span class="icon icon-message" style="height: 52px;"></span>
+							</div>
+							<div>
+								<span class="icon icon-settings"></span>
+							</div>
+						</li>
+					</ul>
+					<ul id="loginNo" style="background-image:url(assets/img/background.jpg);">
+						<li>
+							<a href="login.html">登录&nbsp;/&nbsp;注册</a>
+						</li>
+					</ul>
+					<div class="center-order">
+						<b>全部订单</b>
+						<span class="icon icon-right"></span>
+						<a href="order.html">查看全部订单</a>
+					</div>
+					<div class="center-menu">
+						<div>
+							<span class="icon icon-cart"></span>
+							<br />
+							<a href="">待付款</a>
+						</div>
+						<div>
+							<span class="icon icon-cart"></span>
+							<br />
+							<a href="">待收货</a>
+						</div>
+						<div>
+							<span class="icon icon-emoji"></span>
+							<br />
+							<a href="">待评价</a>
+						</div>
+						<div>
+							<span class="icon icon-phone"></span>
+							<br />
+							<a href="">退款/售后</a>
+						</div>
+					</div>
+					<div class="center-other" style="border-bottom: solid 10px gainsboro;">
+						<span class="icon icon-app" style="float: left;margin-left: 2%;color: orangered;font-weight: 900;"></span>
+						<b>我的拍卖</b>
+						<span class="icon icon-right"></span>
+					</div>
+					<div class="center-other">
+						<span class="icon icon-edit" style="float: left;margin-left: 2%;color: orangered;font-weight: 900;"></span>
+						<b>帮助与反馈</b>
+						<span class="icon icon-right"></span>
+					</div>
+					<div class="center-other" style="border-bottom: solid 10px gainsboro;">
+						<span class="icon icon-share" style="float: left;margin-left: 2%;color: orangered;font-weight: 900;"></span>
+						<b>关于</b>
+						<span class="icon icon-right"></span>
+					</div>
+					<div class="center-other" style="border-bottom: solid 10px gainsboro;">
+						<span class="icon icon-settings" style="float: left;margin-left: 2%;color: orangered;font-weight: 900;"></span>
+						<b>设置</b>
+						<span class="icon icon-right"></span>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<!--** SUI JS **-->
+		<script type='text/javascript' src='assets/js/sui/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/sui/sm-extend.min.js' charset='utf-8'></script>
+
+		<!-- 最后加载sharebike，调用$.init() -->
+		<script type='text/javascript' src='assets/js/common.js' charset='utf-8'></script>
+		<!-- 各个页面自身的JS -->
+		<script type='text/javascript' src='assets/js/center.js' charset='utf-8'></script>
+	</body>
+
+</html>

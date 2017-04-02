@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.CommonDAO">
+
+	<update id="commonDeleteById" parameterType="map">
+		update ${commonTable} set is_del=1 where id=#{id}		
+	</update>
+
+	<select id="commonGetDataById" parameterType="map" resultType="map">
+		select * from ${commonTable} where id=#{id}
+	</select>
+
+	<select id="commonFindAll" resultType="map">
+		select * from ${commonTable}
+	</select>
+</mapper>

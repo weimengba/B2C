@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pub.dao.PubOrderDAO">
+	<select id="selectOrder" resultType="map">
+		select id,customer_id,total_price,pay,state,customer_address_id,remark,ctime,is_del from om_order
+		<where>					
+		 	<if test="state != null and state != '' ">
+				and state=#{state}
+			</if> 	
+			 <if test="customer_id  != null and customer_id != ''">
+				and customer_id=#{customer_id}
+			</if> 
+			<if test="is_del != null and is_del != ''">
+				and is_del=#{is_del}
+			</if> 	
+				<if test="id != null and id != '' ">
+				and id=#{id}
+			</if>
+			    and is_del=0 	
+		</where>		
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+			
+		</if>
+	</select>
+
+		<insert id="insertOrder" parameterType="map" useGeneratedKeys="true" keyProperty="id">
+		insert into om_order ( customer_id,total_price,pay,state,customer_address_id,remark,ctime,utime,is_del)
+		values (#{customer_id},#{total_price},#{pay},#{state},#{customer_address_id},#{remark},#{ctime},#{utime},#{is_del})
+	    </insert>
+	       
+	    <update id="updateOrderByid" parameterType="map">
+
+		update om_order set
+			<if test="customer_id != null and customer_id !='' ">
+				customer_id =#{customer_id}    ,
+			</if>
+			<if test="total_price != null and total_price !='' ">
+				total_price =#{total_price}    ,
+			</if>
+			<if test="pay != null and pay !='' ">
+				pay =#{pay}    ,
+			</if>
+			<if test="state != null and state !='' ">
+				state =#{state}    ,
+			</if>
+			<if test="customer_address_id != null and customer_address_id !='' ">
+				customer_address_id =#{customer_address_id}    ,
+			</if> 
+			<if test="remark != null and remark !='' ">
+				remark =#{remark}    ,
+			</if> 
+			<if test="ctime != null and ctime !='' ">
+				ctime =#{ctime}    ,
+			</if> 
+			<if test="utime != null and utime !='' ">
+				utime =#{utime},
+			</if> 
+			<if test="is_del != null and is_del !='' ">
+				is_del =#{is_del},
+			</if> 		 
+			id=id
+		where id = #{id}
+
+	</update>
+	<!-- 根据客户ID查询 -->
+	<select id="selectOrderBycustomerId" resultType="map">
+		select id,customer_id,total_price,pay,state,customer_address_id,remark,ctime,is_del from om_order
+		<where>					
+		 	<if test="customer_id != null and customer_id != '' ">
+				and customer_id=#{customer_id}
+			</if> 	
+			    and is_del=0 	
+		</where>				
+	</select>
+	<!--  -->
+	<select id="findGoodsDynamic" parameterType="map" resultType="map">
+		SELECT
+		*
+		FROM
+		goods_v
+		<where>
+			<if test="id != null and id !='' ">
+				and id = #{id}
+			</if>
+			
+		</where>
+		
+	</select>
+</mapper>

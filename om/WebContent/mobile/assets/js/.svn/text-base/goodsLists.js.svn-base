@@ -1,0 +1,84 @@
+/**
+ * description:商品列表
+ * author: 葛小雷
+ */
+$(function() {
+	'use strict';
+	var categoryId = $.getUrlId();
+	var searchTitle;
+	var sortWay = {
+		desc: 1,
+		orderColumn: 'price'
+	}
+	$(document).on(
+		"pageInit",
+		"#om-goodList",
+		function(e, id, page) {	
+			refreshData();
+			console.log('way:'+sortWay.desc);
+	});			
+	function refreshData(){
+		console.log('获取查找的商品标题：'+searchTitle);
+		$.omAjax({
+				type: "post",
+				url: "pub/goods/goodsById.do",
+				data: {
+					cid: categoryId,
+					c_desc: sortWay.desc,
+					c_od: sortWay.orderColumn,
+					title: searchTitle
+				},
+				success: function(data) {
+					console.log('success'+searchTitle);
+					$('#goods>.col-100').remove();
+					$.each(data.datas, function(i, d) {
+						var goods = '<div class="col-100"><a href="goodsDetails.html?id=' + d.id + '"><img class="recom-img" src="' + $.GlobalVar.imageURL + d.path + '" alt="宝贝主图" /><div class="row no-gutter"><div class="col-50 u-tit"><span>' + d.title + '</span></div><div class="col-20"><span class="u-price">￥' + d.price + '</span></div><div class="col-30"><span style="">月销' + d.num + '笔</span></div></div></a></div>';						
+						$('#goods').append(goods);
+					});
+				}
+		});
+	}
+//	$("#sortByPrice").on("click", function(e) {
+//		if(sortWay.desc){
+//			sortWay = {
+//			    orderColumn: 'price'
+//			}
+//			refreshData();
+//		}else {
+//			sortWay = {
+//				desc: 1,
+//				orderColumn: 'price'
+//			}
+//			refreshData();
+//		}
+//	})
+	
+//	sortWayData($("#searchBtn"),'')
+//	$("#searchBtn").click=function(){
+//		console.log()
+//	}
+	sortWayData($("#sortByPrice"),'price');
+	sortWayData($("#sortBySells"),'num');
+	$("#searchBtn").on("click",function(){
+		searchTitle = $("#searchGoods").val();
+		console.log("shuchu:"+searchTitle);
+		refreshData();
+	});	
+	function sortWayData(btn,way){
+		$(btn).on("click", function(e) {
+			if(sortWay.desc){
+				sortWay = {
+				    orderColumn: way
+				}
+				refreshData();
+			}else {
+				sortWay = {
+					desc: 1,
+					orderColumn: way
+				}
+				refreshData();
+			}
+		})
+	}
+	
+});

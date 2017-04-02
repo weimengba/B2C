@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.PlatCustomerDAO">
+    
+    <!-- 条件查询客户列表 -->
+    <select id="selectCustomer" parameterType="map" resultType="map">
+		select 
+			id,
+			account,
+			password,
+			mobile,
+			email,
+			nickname,
+			sex,
+			ctime,
+			utime
+		from customer_v 
+		<where>
+			<if test="account != null and account !=''">
+				and account like concat('%',#{account},'%')
+			</if>
+			<if test="mobile != null and mobile !=''">
+				and mobile like concat('%',#{mobile},'%')
+			</if>
+			<if test="email != null and email !=''">
+				and email like concat('%',#{email},'%')
+			</if>
+			<if test="nickname != null and nickname !=''">
+				and nickname like concat('%',#{nickname},'%')
+			</if>
+			<if test="sex != null and sex !=''">		
+			    and sex=#{sex}
+			</if>
+			<if test="ctime != null and ctime !=''">
+				and ctime=#{ctime}
+			</if>
+		</where>
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+	</select>
+
+    <!-- 添加客户 -->
+	<insert id="insertCustomer" parameterType="map">
+		insert into om_customer(
+		    <if test="account != null and account !=''">	
+			account,
+			</if>
+			<if test="password != null and password !=''">
+			password,
+			</if>
+			<if test="mobile != null and mobile !=''">
+			mobile,
+			</if>
+			<if test="email != null and email !=''">
+			email,
+			</if>
+			<if test="nickname != null and nickname !=''">
+			nickname,
+			</if>
+			<if test="sex != null and sex !=''">
+			sex,
+			</if>
+			ctime
+		)values(
+		    <if test="account != null and account !=''">
+			#{account},
+			</if>
+			<if test="password != null and password !=''">
+			#{password},
+			</if>
+			<if test="mobile != null and mobile !=''">
+			#{mobile},
+			</if>
+			<if test="email != null and email !=''">
+			#{email},
+			</if>
+			<if test="nickname != null and nickname !=''">
+			#{nickname},
+			</if>
+			<if test="sex != null and sex !=''">
+			#{sex},
+			</if>
+			now()
+		)
+	
+	</insert>
+	
+	<!-- 修改客户信息 -->
+	<update id="updateCustomerById" parameterType="map">
+		update om_customer set 
+		<if test="password != null and password !='' ">
+			password=#{password},
+		</if>
+		<if test="mobile != null and mobile !='' ">
+			mobile=#{mobile},
+		</if>
+		<if test="email != null and email !='' ">
+			email=#{email},
+		</if>
+		<if test="nickname != null and nickname !='' ">
+			nickname=#{nickname},
+		</if>
+		<if test="sex != null and sex !='' ">
+			sex=#{sex},
+		</if>
+		id=#{id}
+		where id=#{id}	
+		
+	</update>
+	
+	
+</mapper>

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/OnlineMall/!svn/ver/555/code/server/om/WebContent/WEB-INF/jsp/goods
+END
+getGoodsId.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/OnlineMall/!svn/ver/555/code/server/om/WebContent/WEB-INF/jsp/goods/getGoodsId.jsp
+END
+goodsImg.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/OnlineMall/!svn/ver/555/code/server/om/WebContent/WEB-INF/jsp/goods/goodsImg.jsp
+END
+goodsValue.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/OnlineMall/!svn/ver/555/code/server/om/WebContent/WEB-INF/jsp/goods/goodsValue.jsp
+END
+getGoodsTypeId.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/555/code/server/om/WebContent/WEB-INF/jsp/goods/getGoodsTypeId.jsp
+END
+goods.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/OnlineMall/!svn/ver/555/code/server/om/WebContent/WEB-INF/jsp/goods/goods.jsp
+END
+goodsType.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/OnlineMall/!svn/ver/555/code/server/om/WebContent/WEB-INF/jsp/goods/goodsType.jsp
+END
+file.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/OnlineMall/!svn/ver/555/code/server/om/WebContent/WEB-INF/jsp/goods/file.jsp
+END
+goodsAttrList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/OnlineMall/!svn/ver/555/code/server/om/WebContent/WEB-INF/jsp/goods/goodsAttrList.jsp
+END
+getGoodsAttrId.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/555/code/server/om/WebContent/WEB-INF/jsp/goods/getGoodsAttrId.jsp
+END

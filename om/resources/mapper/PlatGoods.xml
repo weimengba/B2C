@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.PlatGoodsDAO">
+
+	<!-- 查询所有的商品 -->
+	<select id="selectGoods" parameterType="map" resultType="map">
+	
+	
+		SELECT 
+			goods.id         as id             ,  
+			goods_ca.id      as   cid          ,
+			goods_ty.id      as   tid          ,     	
+			goods_ca.name    as categoryId     , 
+			goods_ty.title   as typeId         ,     
+			goods.title      as title          ,        
+			price            as price          ,        
+			market_price     as marketPrice    , 
+			quantity         as quantity       ,     
+			num              as num            ,          
+			brief            as brief          ,        
+			detail           as detail         ,       
+			goods.ctime      as ctime          ,       
+			is_onsale        as isOnsale        
+			    FROM goods_v AS goods LEFT JOIN goods_type_v AS goods_ty ON goods.type_id=goods_ty.id LEFT JOIN goods_category_v AS goods_ca ON goods.category_id=goods_ca.id
+		
+
+		<where>
+			<if test="title != null and title !='' ">
+				and goods.title like concat('%',#{title},'%')
+			</if>
+			<if test="price != null and price !='' ">
+				and price like concat('%',#{price},'%')
+			</if>
+		</where>		
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+		  
+	</select>
+
+  <!-- 添加一个商品 -->
+       <insert id="insertGoods" parameterType="map"
+		useGeneratedKeys="true" keyProperty="id">
+		insert into om_goods (
+		<if test="categoryId != null and categoryId !='' ">
+			category_id,
+		</if>
+		<if test="typeId != null and typeId !='' ">
+			type_id,
+		</if>
+		<if test="title != null and title !='' ">
+			title,
+		</if>
+		<if test="price != null and price !='' ">
+			price,
+		</if>
+		<if test="marketPrice != null and marketPrice !='' ">
+			market_price,
+		</if>
+		<if test="quantity != null and quantity !='' ">
+			quantity,
+		</if>
+		<if test="num != null and num !='' ">
+			num,
+		</if>
+		<if test="brief != null and brief !='' ">
+			brief,
+		</if>
+		<if test="detail != null and detail !='' ">
+			detail,
+		</if>
+		<if test="isDel != null and isDel !='' ">
+			is_del,
+		</if>
+		ctime
+		)
+		values (
+		<if test="categoryId != null and categoryId !='' ">
+			#{categoryId},
+		</if>
+		<if test="typeId != null and typeId !='' ">
+			#{typeId},
+		</if>
+		<if test="title != null and title !='' ">
+			#{title},
+		</if>
+		<if test="price != null and price !='' ">
+			#{price},
+		</if>
+		<if test="marketPrice != null and marketPrice !='' ">
+			#{marketPrice},
+		</if>
+		<if test="quantity != null and quantity !='' ">
+			#{quantity},
+		</if>
+		<if test="num != null and num !='' ">
+			#{num},
+		</if>
+		<if test="brief != null and brief !='' ">
+			#{brief},
+		</if>
+		<if test="detail != null and detail !='' ">
+			#{detail},
+		</if>
+		<if test="isDel != null and isDel !='' ">
+			#{isDel},
+		</if>
+		now()
+		)
+	</insert>
+       
+     
+       <!-- 修改商品 -->
+	<update id="updateGoodsById"  parameterType="map">
+		update om_goods set
+		<if test="categoryId != null and categoryId !='' ">
+			category_id=#{categoryId},
+		</if>
+		<if test="typeId != null and typeId !='' ">
+			type_id=#{typeId},
+		</if>  
+		<if test="title != null and title !='' ">
+			title=#{title},
+		</if>  
+		<if test="price != null and price !='' ">
+			price=#{price},
+		</if>  
+		<if test="marketPrice != null and marketPrice !='' ">
+			market_price=#{marketPrice},
+		</if> 
+		<if test="quantity != null and quantity !='' ">
+			quantity=#{quantity},
+		</if> 
+		<if test="num != null and num !='' ">
+			num=#{num},
+		</if> 
+		<if test="brief != null and brief !='' ">
+			brief=#{brief},
+		</if>
+		<if test="detail != null and detail !='' ">
+			detail=#{detail},
+		</if>
+		<if test="isDel != null and isDel !='' ">
+			 is_del=#{isDel},
+		</if>
+	    id=#{id} 
+		where id=#{id}		
+	</update>
+       
+       <!-- 查询的商品图片 -->
+	<select id="selectGoodsPhoto" parameterType="map" resultType="map">
+		select 
+		    id                 as id             ,           	
+			type               as type      ,  
+			object_id          as objectId   ,
+			file_name          as  fileName   ,
+			old_name           as   oldName,
+			content_type       as   contentType,
+			length             as   length,
+			path               as     path,
+			ctime              as ctime          ,        
+			utime              as utime          ,
+			is_del             as isDel    
+		FROM
+		common_file_v
+		where object_id = #{objectId} and type = #{type}	
+	</select>
+            <!--删除图片  -->
+      <update id="goodsDeletePhoto" parameterType="map">
+		update om_common_file set is_del=1 where id=#{id} and type = #{type}		
+	</update>
+	<select id="selectGoodsById" parameterType="map" resultType="map">
+	select
+	*
+	from
+	om_goods
+	<where>
+	    <if test="id != null and id !='' ">
+			and id=#{id}
+		</if>
+    </where>
+	</select>
+</mapper>

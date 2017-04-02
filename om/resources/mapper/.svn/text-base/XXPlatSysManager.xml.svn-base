@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.XXPlatSysManagerDAO">
+
+	<select id="findSysManager" resultType="map">
+		SELECT		
+		
+			 id       ,
+			 name     ,
+			 account  ,
+			 password ,
+			 mobile   ,
+			 email    ,
+			 ctime    ,
+			 utime    ,
+			 is_del   
+			
+		FROM
+		sys_manager_v		
+		<where>
+			<if test="name != null and name !='' ">
+				and name like concat('%',#{name},'%')
+			</if>
+			<if test="account != null and account !='' ">
+				and account like concat('%',#{account},'%')
+			</if>
+			<if test="mobile != null and mobile !='' ">
+				and mobile like concat('%',#{mobile},'%')
+			</if>
+			<if test="email != null and email !='' ">
+				and email like concat('%',#{email},'%')
+			</if>
+		</where>		
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+	</select>
+
+	<insert id="insertSysManager" parameterType="map">
+		insert into om_sys_manager
+		(		
+			 name     ,
+			 account  ,
+			 password ,
+			 mobile   ,
+			 email    ,
+			 ctime    
+		)
+		values (
+		#{name},
+		#{account},
+		#{password},
+		#{mobile},
+		#{email},
+		now()		
+		)
+	</insert>
+	
+	<update id="updateSysManager" parameterType="map">
+
+		update om_sys_manager set
+			<if test="name != null and name !='' ">
+				name =#{name}    ,
+			</if>
+			<if test="account != null and account !='' ">
+				account =#{account}    ,
+			</if>
+			<if test="password != null and password !='' ">
+				password =#{password}    ,
+			</if>
+			<if test="mobile != null and mobile !='' ">
+				mobile =#{mobile}    ,
+			</if>
+			<if test="email != null and email !='' ">
+				email =#{email}    ,
+			</if> 
+			id = id 
+
+		where id = #{id}
+
+	</update>
+
+	
+
+</mapper>
+

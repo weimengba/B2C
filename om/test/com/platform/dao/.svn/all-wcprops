@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/OnlineMall/!svn/ver/933/code/server/om/test/com/platform/dao
+END
+PlatGoodsDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/OnlineMall/!svn/ver/933/code/server/om/test/com/platform/dao/PlatGoodsDAOTest.java
+END
+PlatOrderDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/OnlineMall/!svn/ver/458/code/server/om/test/com/platform/dao/PlatOrderDAOTest.java
+END
+TestPlatOrderDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/OnlineMall/!svn/ver/448/code/server/om/test/com/platform/dao/TestPlatOrderDAO.java
+END
+PlatGoodsTypeDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/634/code/server/om/test/com/platform/dao/PlatGoodsTypeDAOTest.java
+END
+PlatGoodsCommentDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/OnlineMall/!svn/ver/587/code/server/om/test/com/platform/dao/PlatGoodsCommentDAOTest.java
+END
+PlatGoodsAttrValueDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/OnlineMall/!svn/ver/633/code/server/om/test/com/platform/dao/PlatGoodsAttrValueDAOTest.java
+END
+PlatGoodsAttrDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/933/code/server/om/test/com/platform/dao/PlatGoodsAttrDAOTest.java
+END
+CommonDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/OnlineMall/!svn/ver/198/code/server/om/test/com/platform/dao/CommonDAOTest.java
+END
+TestPlatReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/OnlineMall/!svn/ver/835/code/server/om/test/com/platform/dao/TestPlatReport.java
+END
+PlatCommonFileDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/OnlineMall/!svn/ver/257/code/server/om/test/com/platform/dao/PlatCommonFileDAOTest.java
+END
+PlatGoodsCategoryDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/OnlineMall/!svn/ver/571/code/server/om/test/com/platform/dao/PlatGoodsCategoryDAOTest.java
+END

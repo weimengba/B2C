@@ -1,0 +1,39 @@
+{
+  "index.html": {
+    "resources": [
+      "assets/js/goodsDetails.js",
+      "assets/js/sui/font_1433401008_2229297.woff",
+      "assets/js/goodsLists.js",
+      "assets/js/config.js",
+      "assets/js/sui/sm.min.js",
+      "assets/js/goods.js",
+      "assets/js/login.js",
+      "assets/js/zepto/zepto.min.js",
+      "assets/js/sui/sm.css",
+      "center.html",
+      "assets/js/sui/sm-extend.min.js",
+      "assets/js/center.js",
+      "assets/img/background.jpg",
+      "assets/js/category.js",
+      "assets/js/common.js",
+      "assets/css/common.css",
+      "assets/js/sui/sm-extend.css"
+    ],
+    "refer": []
+  },
+  "customercart.html": {
+    "resources": [
+      "assets/js/customercart.js",
+      "assets/css/common.css"
+    ]
+  },
+  "center.html": {
+    "resources": [
+      "customercart.html",
+      "assets/css/common.css"
+    ],
+    "refer": [
+      "customercart.html"
+    ]
+  }
+}

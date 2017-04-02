@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/OnlineMall/!svn/ver/811/code/server/om/WebContent/WEB-INF/jsp/plat/payment
+END
+platPaymentList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/OnlineMall/!svn/ver/811/code/server/om/WebContent/WEB-INF/jsp/plat/payment/platPaymentList.jsp
+END
+platPaymentSave.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/OnlineMall/!svn/ver/805/code/server/om/WebContent/WEB-INF/jsp/plat/payment/platPaymentSave.jsp
+END

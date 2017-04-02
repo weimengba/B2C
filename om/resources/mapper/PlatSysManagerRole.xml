@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.PlatSysManagerRoleDAO">
+
+	<!-- 查询所有 -->
+	<select id="SelectSysMangerRole" resultType="map">
+		select
+			id				as 	id,
+			manager_id		as  managerId,
+			role_id			as	roleId	,	
+			ctime			as  ctime
+		from om_sys_manager_role
+		<where>
+			<if test="managerId != null and managerId !='' ">
+				and manager_id like concat('%',#{managerId},'%')
+			</if>
+			<if test="roleId != null and roleId !='' ">
+				and role_id like concat('%',#{roleId},'%')
+			</if>
+		</where>	
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+	</select>
+	
+	<!-- 增加 -->
+	<insert id="insertSysMangerRole" parameterType="map">
+		insert into om_sys_manager_role(
+		<if test="managerId != null and managerId !='' ">
+			manager_id,
+		</if>
+		<if test="roleId != null and roleId !='' ">
+			role_id,
+		</if>
+				ctime
+		)	
+		 values(
+		 		#{managerId},
+		 		#{roleId},
+		 		now()
+		 		) 
+	</insert>
+
+
+</mapper>

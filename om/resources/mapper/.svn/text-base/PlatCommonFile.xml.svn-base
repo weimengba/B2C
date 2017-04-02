@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.PlatCommonFileDAO">
+	<!-- 插入文件 -->
+	<insert id="insertFile" parameterType="map">
+		insert into
+		om_common_file(
+		<if test="type != null and type !='' ">
+		type,
+		</if>
+		<if test="objectId != null and objectId !='' ">
+		object_id,
+		</if>
+		<if test="fileName != null and fileName !='' ">
+		file_name,
+		</if>
+		<if test="oldName != null and oldName !='' ">
+		old_name,
+		</if>
+		<if test="contentType != null and contentType !='' ">
+		content_type,
+		</if>
+		<if test="length != null and length !='' ">
+		length,
+		</if>
+		<if test="path != null and path !='' ">
+		path,
+		</if>
+		ctime
+		)values(
+		<if test="type != null and type !='' ">
+		#{type},
+		</if>
+		<if test="objectId != null and objectId !='' ">
+		#{objectId},
+		</if>
+		<if test="fileName != null and fileName !='' ">
+		#{fileName},
+		</if>
+		<if test="oldName != null and oldName !='' ">
+		#{oldName},
+		</if>
+		<if test="contentType != null and contentType !='' ">
+		#{contentType},
+		</if>
+		<if test="objectId != null and objectId !='' ">
+		#{length},
+		</if>
+		<if test="path != null and path !='' ">
+		#{path},
+		</if>
+		now()
+		)
+
+	</insert>
+
+	<!-- 根据ID更新文件数据 -->
+	<update id="updateFileById" parameterType="map">
+		update om_common_file set
+		<if test="type != null and type !='' ">
+			type = #{type},
+		</if>
+		<if test="objectId != null and objectId !='' ">
+			object_id = #{objectId},
+		</if>
+		<if test="fileName != null and fileName !='' ">
+			file_name = #{fileName},
+		</if>
+		<if test="oldName != null and oldName !='' ">
+			old_name = #{oldName},
+		</if>
+		<if test="contentType != null and contentType !='' ">
+			content_type=#{contentType},
+		</if>
+		<if test="length != null and length !='' ">
+			length=#{length},
+		</if>
+		<if test="path != null and path !='' ">
+			path=#{path},
+		</if>
+		utime=#{utime}
+		where id=#{id}
+
+	</update>
+
+	<!--根据条件查询File表数据 -->
+	<select id="selectFile" parameterType="map" resultType="map">
+		select
+		id,
+		type,
+		object_id as objectId ,
+		file_name,
+		old_name,
+		content_type,
+		length,
+		path,
+		ctime,
+		utime,
+		is_del as isDel
+
+		from common_file_v
+		<where>
+			<if test="type != null and type !=''">
+				and type=#{type}
+			</if>
+			<if test="objectId != null and objectId !=''">
+				and object_id=#{objectId}
+			</if>
+			<if test="contentType != null and contentType !=''">
+				and content_type=#{contentType}
+			</if>
+			<if test="ctime != null and ctime !=''">
+				and ctime=#{ctime}
+			</if>
+		</where>
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+	</select>
+</mapper>

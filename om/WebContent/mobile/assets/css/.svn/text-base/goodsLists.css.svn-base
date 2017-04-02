@@ -1,0 +1,15 @@
+html {font-size: 16px;}
+body {font-size: 0.75rem;}
+body a {text-decoration: none;}
+.list-header {height: auto;padding-left: 0;padding-right: 0;}
+.list-header .searchbar a {margin-top: -5px !important;font-weight: bold;}
+.order-way a {color: black;}
+.content {top: 4.4rem !important;}
+.bg-color {background-color: #F3F3F3;}
+.m-recommend .col-100 { height: auto;padding-top: 8px; border-bottom: 1px solid #D9D9D9;}
+.m-recommend span {height: 25px;line-height: 20px;text-indent: 1em; font-size: 12px;color: #111111;}
+.m-recommend .recom-tit {text-indent: 0em;color: #111111;}
+.recom-img {width: 95%;margin-left: 2.5%; height: auto;}
+.u-tit {float: left;text-indent: 1rem;}
+.u-price {color: red;}
+

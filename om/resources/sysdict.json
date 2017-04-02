@@ -1,0 +1,20 @@
+{
+  "id": "12345678",
+  "globalDictType": "DICT_ORDER_STATUS",
+  "systemName": "OM电商系统系统——数据字典",
+  "globalDictName": "已签收",
+  "dictionary": {
+    "DICT_DEL": {
+      "0": "正常",
+      "1": "删除"
+    },
+    "DICT_ORDER_STATUS": {
+      "0": "新下单",
+      "1": "已付款",
+      "2": "已确认",
+      "3": "已发货",
+      "4": "已签收"
+    }
+  },
+  "globalDictValue": "4"
+}

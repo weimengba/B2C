@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.PlatSysManagerDAO">
+
+	<!-- 查询所有用户 -->
+	<select id="selectSysManger" resultType="map">
+		select
+			 id       ,
+			 name     ,
+			 account  ,
+			 password ,
+			 mobile   ,
+			 email    ,
+			 ctime    ,
+			 utime    ,
+			 is_del   
+		from sys_manager_v
+		
+		<where>
+			<if test="name != null and name !='' ">
+				and name like concat('%',#{name},'%')
+			</if>
+			<if test="account != null and account !='' ">
+				and account =#{account}
+			</if>
+			<if test="password != null and password !='' ">
+				and password =#{password}
+			</if>
+			<if test="mobile != null and mobile !='' ">
+				and mobile like concat('%',#{mobile},'%')
+			</if>
+			<if test="email != null and email !='' ">
+				and email like concat('%',#{email},'%')
+			</if>
+		</where>		
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+	</select>
+	
+
+	<!-- 增加用户 -->
+	<insert id="insertSysManger" parameterType="map">
+		insert into om_sys_manager(
+		<if test="name != null and name !='' ">
+			name,
+		</if>
+		<if test="account != null and account !='' ">
+			account,
+		</if>
+		<if test="password != null and password !='' ">
+			password,
+		</if>
+		<if test="mobile != null and mobile !='' ">
+			mobile,
+		</if>
+		<if test="email != null and email !='' ">
+			email,
+		</if>
+				ctime
+		)	
+		 values(
+		        <if test="name != null and name !='' ">
+		 		#{name},
+		 		</if>
+		 		<if test="account != null and account !='' ">
+		 		#{account},
+		 		</if>
+		 		<if test="password != null and password !='' ">
+		 		#{password},
+		 		</if>
+		 		<if test="mobile != null and mobile !='' ">
+		 		#{mobile},
+		 		</if>
+		 		<if test="email != null and email !='' ">
+		 		#{email},
+		 		</if>
+		 		now()
+		 		) 
+	</insert>
+	
+
+	<!-- 修改用户 -->
+	<update id="updateSysManger" parameterType="map">
+		update om_sys_manager set
+		<if test="name != null and name !='' ">
+			name=#{name},
+		</if>
+		<if test="password != null and password !='' ">
+			password=#{password},
+		</if>
+		<if test="mobile != null and mobile !='' ">
+			mobile=#{mobile},
+		</if>
+		<if test="email != null and email !='' ">
+			email=#{email}
+		</if>
+			where id=#{id}
+		
+	</update>
+	
+</mapper>

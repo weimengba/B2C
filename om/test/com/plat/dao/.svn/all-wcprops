@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/OnlineMall/!svn/ver/755/code/server/om/test/com/plat/dao
+END
+PlatSysManagerRoleDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/OnlineMall/!svn/ver/735/code/server/om/test/com/plat/dao/PlatSysManagerRoleDAOTest.java
+END
+PubSysManagerDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/OnlineMall/!svn/ver/355/code/server/om/test/com/plat/dao/PubSysManagerDAOTest.java
+END
+XXPubSysManagerDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/362/code/server/om/test/com/plat/dao/XXPubSysManagerDAOTest.java
+END
+PlatSysRoleDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/OnlineMall/!svn/ver/755/code/server/om/test/com/plat/dao/PlatSysRoleDAOTest.java
+END
+PlatCustomerDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/OnlineMall/!svn/ver/505/code/server/om/test/com/plat/dao/PlatCustomerDAOTest.java
+END
+PlatSysPermissionDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/506/code/server/om/test/com/plat/dao/PlatSysPermissionDAOTest.java
+END
+PlatCommonFileDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/OnlineMall/!svn/ver/689/code/server/om/test/com/plat/dao/PlatCommonFileDAOTest.java
+END
+PlatSysManagerDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/OnlineMall/!svn/ver/474/code/server/om/test/com/plat/dao/PlatSysManagerDAOTest.java
+END
+PlatSysRolePermissionDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/OnlineMall/!svn/ver/287/code/server/om/test/com/plat/dao/PlatSysRolePermissionDAOTest.java
+END

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>电商</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="shortcut icon" href="/favicon.ico">
+
+		<!--SUI CSS-->
+		<link rel="stylesheet" href="assets/js/sui/sm.css">
+		<link rel="stylesheet" href="assets/js/sui/sm-extend.css">
+		<!--OM CSS-->
+		
+		<link rel="stylesheet" href="assets/css/common.css">
+		<link rel="stylesheet" href="assets/css/goodscar.css">	
+		<!--JS zepto,SUI全局配置config,百度地图API-->
+		<script type='text/javascript' src='assets/js/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/config.js' charset='utf-8'></script>
+		
+	</head>
+	<body>
+		<div class="page-group">
+
+			<!-- 单个page ,第一个.page默认被展示-->
+			<div id="om-app" class="page">
+				<header class="bar bar-nav">
+			        <a class="icon icon-left pull-left"></a>
+			      	<a href="" class="icon icon-home pull-right"></a>
+			        <h1 class="title">红酒汇</h1>
+			    </header>
+			    <!-- 工具栏 -->
+			    <nav class="bar bar-tab">
+					<a class="tab-item active" href="index.html">
+						<span class="icon icon-home"></span>
+						<span class="tab-label">首页</span>
+					</a>
+					<a class="tab-item" href="me.html">
+						<span class="icon icon-me"></span>
+						<span class="tab-label">我</span>
+					</a>
+					<a class="tab-item" href="app.html">
+						<span class="icon icon-app"></span>
+						<span class="tab-label">分类</span>
+					</a>
+					<a class="tab-item" href="#">
+						<span class="icon icon-cart"></span>
+						<span class="tab-label">购物车</span>
+					</a>
+		  		</nav>        
+				<div class="content">
+				  	<div class="content-padded grid-demo">
+				    	<div class="searchbar row">
+						    <a class="text-danger col-20">红酒汇</a>
+						    <div class="search-input col-80">
+						      <input type="search" id='search' placeholder='输入关键字...'/>
+						    </div>
+						    
+						</div>
+				    	<div class="row" id="row">
+						    <!--<div class="col-50" style="margin-top:10px;">
+						    	<div class="red">
+						    		<text>红葡萄酒</text>
+						    		
+						    	</div>
+						    </div>
+						    <div class="col-50" style="margin-top:10px;">
+						    	<div class="red">
+						    		<text>白葡萄酒</text>
+						    	</div>
+						    </div>
+						   
+				    	
+						    <div class="col-50" style="margin-top:10px;">
+						    	<div class="red">
+						    		<text>桃红葡萄酒</text>
+						    	</div>
+						    </div>
+						    <div class="col-50" style="margin-top:10px;">
+						    	<div class="red">
+						    		<text>顶级酒</text>
+						    	</div>
+						    </div>
+						   
+				    	
+						    <div class="col-50" style="margin-top:10px;">
+						    	<div class="red">
+						    		<text>起泡酒</text>
+						    	</div>
+						    </div>-->
+						    
+						   
+				    	</div>
+					    
+				  	</div>
+				</div>
+			</div>
+		</div>	
+		<!--** SUI JS **-->
+		<script type='text/javascript' src='assets/js/sui/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/sui/sm-extend.min.js' charset='utf-8'></script>
+		<!-- 各个页面自身的JS -->
+
+		<script type='text/javascript' src='assets/js/app.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/list.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/details.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/goodscar.js' charset='utf-8'></script>
+				
+		<!-- 最后加载sharebike，调用$.init() -->
+		<script type='text/javascript' src='assets/js/common.js' charset='utf-8'></script>
+	</body>
+</html>

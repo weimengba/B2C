@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pub.dao.DemoDAO">
+
+	<update id="updateDemoName" parameterType="map">
+		update demo set
+		name=#{name} where id=#{id}
+	</update>
+
+
+	<select id="findAll" resultType="map">
+		SELECT
+
+		id ,
+		name ,
+		age ,
+		address ,
+		school ,
+		ctime ,
+		utime ,
+		is_del ,
+		money
+
+		FROM
+		demo_v
+	</select>
+
+	<insert id="addDemo" parameterType="map">
+		insert into demo (name,age)
+		values (#{name},#{age})
+	</insert>
+
+	<insert id="addDemo1" parameterType="map">
+
+		insert into demo (
+		name,
+		<if test="school != null and school !='' ">
+			school,
+		</if>
+		<if test="address != null and address !='' ">
+			address,
+		</if>
+		ctime,
+		age
+		)
+
+
+		values (
+		#{name},
+		<if test="school != null and school !='' ">
+			#{school},
+		</if>
+		<if test="address != null and address !='' ">
+			#{address},
+		</if>
+		now(),
+		#{age}
+		)
+
+
+	</insert>
+
+	<insert id="addDemoByPojo" parameterType="demo"
+		useGeneratedKeys="true" keyProperty="id">
+
+		insert into demo (
+		name,
+		<if test="school != null and school !='' ">
+			school,
+		</if>
+		<if test="address != null and address !='' ">
+			address,
+		</if>
+		ctime,
+		age
+		)
+
+
+		values (
+		#{name},
+		<if test="school != null and school !='' ">
+			#{school},
+		</if>
+		<if test="address != null and address !='' ">
+			#{address},
+		</if>
+		now(),
+		#{age}
+		)
+
+
+	</insert>
+
+
+	<update id="updateDemo" parameterType="map">
+
+		update demo set
+
+
+
+		name=#{name},
+		age=#{age}
+
+
+
+		where id = #{id}
+
+	</update>
+
+	<select id="findDemoDynamic" parameterType="map" resultType="map">
+		SELECT
+		*
+		FROM
+		demo
+		<where>
+			<if test="name != null and name !='' ">
+				and name = #{name}
+			</if>
+			<if test="age != null and age !='' ">
+				and age = #{age}
+			</if>
+		</where>
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+	</select>
+
+	<select id="findDemoDynamicOfDemo" parameterType="map"
+		resultType="demo">
+		SELECT
+		*
+		FROM
+		demo
+		<where>
+			<if test="name != null and name !='' ">
+				and name = #{name}
+			</if>
+			<if test="age != null and age != '' ">
+				and age = #{age}
+			</if>
+		</where>
+
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+	</select>
+
+
+	<!-- 循环测试 -->
+	<insert id="addMultDemo" parameterType="map">
+		insert into ttt (name,age)
+		values 
+		<foreach collection="names" item="name" index="index" separator="," open=""
+			close="">
+
+			(#{name},#{ages['index']})
+		</foreach>
+	</insert>
+
+	<select id="testSelect" parameterType="map" resultType="map">
+		 
+			select * from demo where  
+			 
+			 age &lt; 100
+			<if test="name !=null">
+			 and name like concat('%',#{name},'%')
+			</if>
+			
+	</select>
+
+</mapper>

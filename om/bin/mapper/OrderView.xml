@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pub.dao.PubOrderViewDAO">
+			<select id="OrderView" resultType="map">
+		select * from orderview_v
+	   <where>								
+		 	<if test="customer_id != null and customer_id != '' ">
+				and customer_id=#{customer_id}
+			</if> 			
+		</where>								
+	</select>
+	
+</mapper>

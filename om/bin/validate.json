@@ -1,0 +1,3197 @@
+{
+  "validators": [
+    {
+      "name": "查询历史订单",
+      "comment": "注释",
+      "uri": "/plat/payment/historyList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "订单ID",
+          "mustVal": true,
+          "code": "orderId",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "下单时间",
+          "mustVal": true,
+          "code": "ctime",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "订单状态",
+          "mustVal": true,
+          "code": "orderStatus",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "历史订单编辑",
+      "comment": "注释",
+      "uri": "/plat/payment/updateHistory.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "订单ID",
+          "mustVal": true,
+          "code": "order_id",
+          "type": "string",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "操作人ID",
+          "mustVal": true,
+          "code": "manager_id",
+          "type": "string",
+          "comment": "注释"
+        },
+        {
+          "mustFill": true,
+          "order": 3,
+          "name": "订单状态",
+          "mustVal": true,
+          "code": "order_status",
+          "type": "string",
+          "comment": "注释"
+        },
+        {
+          "mustFill": true,
+          "order": 4,
+          "name": "信息",
+          "mustVal": true,
+          "code": "message",
+          "type": "string",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "修改历史订单",
+      "comment": "注释",
+      "uri": "/plat/payment/updateHistory.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "id",
+          "mustVal": true,
+          "code": "id",
+          "type": "string",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "删除历史订单",
+      "comment": "注释",
+      "uri": "/plat/payment/historyDelete.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "id",
+          "mustVal": true,
+          "code": "id",
+          "type": "string",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "添加历史订单验证",
+      "comment": "注释",
+      "uri": "/plat/payment/historySave.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 5,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "string",
+          "comment": "注释"
+        },
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "订单ID",
+          "mustVal": true,
+          "code": "orderId",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": true,
+          "order": 2,
+          "name": "支付人ID",
+          "mustVal": true,
+          "code": "managerId",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": true,
+          "order": 3,
+          "name": "商品状态",
+          "mustVal": true,
+          "code": "orderStatus",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 4,
+          "name": "信息",
+          "mustVal": true,
+          "code": "message",
+          "type": "string",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "编辑",
+      "comment": "注册",
+      "uri": "/plat/payment/updatePlat.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 5,
+          "name": "Id",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注册时间",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "注册",
+      "comment": "条件查询",
+      "uri": "/plat/payment/platPaymentDelete.do",
+      "fields": [
+        {
+          "min": null,
+          "mustFill": true,
+          "max": null,
+          "order": 1,
+          "name": "id",
+          "mustVal": true,
+          "code": "id",
+          "comment": "姓名",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "注册",
+      "comment": "条件查询",
+      "uri": "/plat/payment/paymentList.do",
+      "fields": [
+        {
+          "min": null,
+          "mustFill": false,
+          "max": null,
+          "order": 4,
+          "name": "支付时间",
+          "mustVal": true,
+          "code": "payTime",
+          "comment": "姓名",
+          "type": "string"
+        },
+        {
+          "min": null,
+          "mustFill": false,
+          "max": null,
+          "order": 1,
+          "name": "支付人",
+          "mustVal": true,
+          "code": "payer",
+          "comment": "姓名",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "支付方式",
+          "mustVal": true,
+          "code": "payWay",
+          "type": "string",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "支付状态",
+          "mustVal": true,
+          "code": "payStatus",
+          "type": "string",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "注册",
+      "comment": "注册",
+      "uri": "/reg.do",
+      "fields": [
+        {
+          "min": 6,
+          "mustFill": true,
+          "max": 20,
+          "order": 1,
+          "name": "姓名",
+          "mustVal": true,
+          "code": "name",
+          "comment": "姓名",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 2,
+          "name": "邮箱",
+          "stringValidator": "email",
+          "mustVal": true,
+          "code": "email",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "min": 10,
+          "mustFill": true,
+          "max": 100,
+          "order": 3,
+          "name": "年龄",
+          "mustVal": true,
+          "code": "age",
+          "comment": "年龄",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 4,
+          "name": "生日",
+          "mustVal": true,
+          "code": "birth",
+          "comment": "生日",
+          "type": "date"
+        },
+        {
+          "mustFill": true,
+          "order": 5,
+          "name": "注册时间",
+          "mustVal": true,
+          "code": "reg_time",
+          "comment": "注册时间",
+          "type": "datetime"
+        }
+      ]
+    },
+    {
+      "name": "查询商品属性值",
+      "comment": "注释",
+      "uri": "/plat/goodsAttrValue/goodsAttrValueList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "属性值",
+          "mustVal": true,
+          "code": "value",
+          "type": "string",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "保存商品属性值",
+      "comment": "注释",
+      "uri": "/plat/goodsAttrValue/goodsAttrValueSave.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "商品ID",
+          "mustVal": true,
+          "code": "goodsId",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "属性ID",
+          "mustVal": true,
+          "code": "attrId",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 4,
+          "name": "属性值",
+          "mustVal": true,
+          "code": "value",
+          "type": "string",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "删除商品属性值",
+      "comment": "注释",
+      "uri": "/plat/goodsAttrValue/goodsAttrValueDelete.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "商品属性值添加编辑",
+      "comment": "注释",
+      "uri": "/plat/goodsAttrValue/goodsAttrValue.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "资源4",
+      "comment": "注释",
+      "uri": "/order/DeleteOrder.do",
+      "fields": [
+        {
+          "min": 0,
+          "mustFill": true,
+          "order": 1,
+          "name": "id",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "资源2",
+      "comment": "注释",
+      "uri": "/order/AddOrder.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "max": null,
+          "order": 1,
+          "name": "用户ID",
+          "mustVal": true,
+          "code": "customer_id",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "min": 0,
+          "mustFill": true,
+          "order": 2,
+          "name": "总价",
+          "mustVal": true,
+          "code": "total_price",
+          "comment": "注释",
+          "type": "double"
+        },
+        {
+          "min": 0,
+          "mustFill": true,
+          "order": 3,
+          "name": "支付金额",
+          "mustVal": true,
+          "code": "pay",
+          "comment": "注释",
+          "type": "double"
+        },
+        {
+          "min": 0,
+          "mustFill": true,
+          "max": 7,
+          "order": 4,
+          "name": "支付状态",
+          "mustVal": true,
+          "code": "state",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "min": 1,
+          "mustFill": true,
+          "max": null,
+          "order": 5,
+          "name": "地址ID",
+          "mustVal": true,
+          "code": "customer_address_id",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": false,
+          "order": 6,
+          "name": "订单备注",
+          "mustVal": true,
+          "code": "remark",
+          "comment": "注释",
+          "type": "text"
+        },
+        {
+          "mustFill": true,
+          "order": 7,
+          "name": "订单创建时间",
+          "mustVal": true,
+          "code": "ctime",
+          "comment": "注释",
+          "type": "datetime"
+        },
+        {
+          "mustFill": false,
+          "order": 8,
+          "name": "结束时间",
+          "mustVal": true,
+          "code": "utime",
+          "comment": "注释",
+          "type": "datetime"
+        },
+        {
+          "min": 0,
+          "mustFill": true,
+          "max": 1,
+          "order": 9,
+          "name": "是否删除",
+          "mustVal": true,
+          "code": "is_del",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "min": 0,
+          "mustFill": false,
+          "order": 1,
+          "name": "id",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "注册",
+      "comment": "条件查询",
+      "uri": "/order/UpdateOrder.do",
+      "fields": [
+        {
+          "min": null,
+          "mustFill": true,
+          "max": null,
+          "order": 1,
+          "name": "id",
+          "mustVal": true,
+          "code": "id",
+          "comment": "姓名",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "资源2",
+      "comment": "注释",
+      "uri": "/order/orderList.do",
+      "fields": [
+        {
+          "min": 0,
+          "mustFill": false,
+          "order": 1,
+          "name": "用户ID",
+          "mustVal": true,
+          "code": "customer_id",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "min": 0,
+          "mustFill": false,
+          "max": 8,
+          "order": 2,
+          "name": "状态",
+          "mustVal": true,
+          "code": "state",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "创建时间",
+          "mustVal": true,
+          "code": "ctime",
+          "comment": "注释",
+          "type": "datetime"
+        },
+        {
+          "min": 0,
+          "mustFill": false,
+          "max": 1,
+          "order": 4,
+          "name": "是否删除",
+          "mustVal": true,
+          "code": "is_del",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "商品分类添加编辑",
+      "comment": "注释",
+      "uri": "/plat/goodsCategory/goodsCategorySave.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "name",
+          "mustVal": true,
+          "code": "name",
+          "type": "string",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "level",
+          "mustVal": true,
+          "code": "level",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 4,
+          "name": "parent_id",
+          "mustVal": true,
+          "code": "parentId",
+          "type": "int",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "商品分类删除",
+      "comment": "注释",
+      "uri": "/plat/goodsCategory/goodsCategoryDelete.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "商品分类删除",
+      "comment": "注释",
+      "uri": "/plat/goodsCategory/goodsCategory.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "goodsCategoryList",
+      "comment": "注释",
+      "uri": "/plat/goodsCategory/goodsCategoryList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "名称",
+          "mustVal": true,
+          "code": "name",
+          "type": "string",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "商品添加编辑",
+      "comment": "注释",
+      "uri": "/plat/goods/goods.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "goods列表验证",
+      "comment": "列表页查询参数验证",
+      "uri": "/plat/goods/goodsDetailList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "商品详情",
+          "mustVal": true,
+          "code": "detail",
+          "type": "text",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "goods列表验证",
+      "comment": "列表页查询参数验证",
+      "uri": "/plat/goods/goodsList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "商品名称",
+          "mustVal": true,
+          "code": "title",
+          "type": "string",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "平台售价",
+          "mustVal": true,
+          "code": "price",
+          "type": "double",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "goods列表验证",
+      "comment": "列表页查询参数验证",
+      "uri": "/pub/goods/goodsList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "商品名称",
+          "mustVal": true,
+          "code": "title",
+          "type": "string",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "平台售价",
+          "mustVal": true,
+          "code": "price",
+          "type": "double",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "goods列表验证",
+      "comment": "列表页查询参数验证",
+      "uri": "/plat/goods/goodsDelete.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "编辑商品",
+      "comment": "注释",
+      "uri": "/plat/goods/goodsSave.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": true,
+          "order": 2,
+          "name": "分类ID",
+          "mustVal": true,
+          "code": "categoryId",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 3,
+          "name": "类别ID",
+          "mustVal": true,
+          "code": "typeId",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 4,
+          "name": "商品名称",
+          "mustVal": true,
+          "code": "title",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 5,
+          "name": "平台售价",
+          "mustVal": true,
+          "code": "price",
+          "comment": "注释",
+          "type": "double"
+        },
+        {
+          "mustFill": true,
+          "order": 6,
+          "name": "市场价",
+          "mustVal": true,
+          "code": "marketPrice",
+          "comment": "注释",
+          "type": "double"
+        },
+        {
+          "mustFill": true,
+          "order": 7,
+          "name": "商品库存",
+          "mustVal": true,
+          "code": "quantity",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 8,
+          "name": "销售数量",
+          "mustVal": true,
+          "code": "num",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 9,
+          "name": "商品简述",
+          "mustVal": true,
+          "code": "brief",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 10,
+          "name": "商品详情",
+          "mustVal": true,
+          "code": "detail",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "goods列表验证",
+      "comment": "列表页查询参数验证",
+      "uri": "/plat/goodsAttr/goodsAttrList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "商品名称",
+          "mustVal": true,
+          "code": "title",
+          "type": "string",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "商品属性添加编辑",
+      "comment": "注释",
+      "uri": "/plat/goodsAttr/goodsAttr.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "编辑商品",
+      "comment": "注释",
+      "uri": "/plat/goodsAttr/goodsAttrSave.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": true,
+          "order": 2,
+          "name": "title",
+          "mustVal": true,
+          "code": "title",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 3,
+          "name": "type_id",
+          "mustVal": true,
+          "code": "typeId",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 4,
+          "name": "dataType",
+          "mustVal": true,
+          "code": "dataType",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 5,
+          "name": "choose_value",
+          "mustVal": true,
+          "code": "chooseValue",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "goods列表验证",
+      "comment": "列表页查询参数验证",
+      "uri": "/plat/goodsAttr/goodsAttrDelete.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "demo列表",
+      "comment": "列表页查询参数验证",
+      "uri": "/demo/demoList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "姓名",
+          "mustVal": true,
+          "code": "name",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "年龄",
+          "mustVal": true,
+          "code": "age",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "goods列表验证",
+      "comment": "列表页查询参数验证",
+      "uri": "/goods/goods.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "商品名称",
+          "mustVal": true,
+          "code": "title",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "商品类别",
+          "mustVal": true,
+          "code": "categoryId",
+          "comment": "注释",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "商品类别查询验证",
+      "comment": "注释",
+      "uri": "/goods/goodsType.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "类别名称",
+          "mustVal": true,
+          "code": "title",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "类别描述",
+          "mustVal": true,
+          "code": "description",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "注册",
+      "comment": "注册",
+      "uri": "/reg.do",
+      "fields": [
+        {
+          "min": 6,
+          "mustFill": true,
+          "max": 20,
+          "order": 1,
+          "name": "姓名",
+          "mustVal": true,
+          "code": "name",
+          "comment": "姓名",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 2,
+          "name": "邮箱",
+          "stringValidator": "email",
+          "mustVal": true,
+          "code": "email",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "min": 10,
+          "mustFill": true,
+          "max": 100,
+          "order": 3,
+          "name": "年龄",
+          "mustVal": true,
+          "code": "age",
+          "comment": "年龄",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 4,
+          "name": "生日",
+          "mustVal": true,
+          "code": "birth",
+          "comment": "生日",
+          "type": "date"
+        },
+        {
+          "mustFill": true,
+          "order": 5,
+          "name": "注册时间",
+          "mustVal": true,
+          "code": "reg_time",
+          "comment": "注册时间",
+          "type": "datetime"
+        }
+      ]
+    },
+    {
+      "name": "资源3",
+      "comment": "注释",
+      "uri": "/order/tianjia.do",
+      "fields": [
+        {
+          "min": 0,
+          "mustFill": true,
+          "order": 1,
+          "name": "id",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "添加商品",
+      "comment": "注释",
+      "uri": "/goods/addGoods.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "分类ID",
+          "mustVal": true,
+          "code": "categoryId",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 2,
+          "name": "类别ID",
+          "mustVal": true,
+          "code": "typeId",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 3,
+          "name": "商品名称",
+          "mustVal": true,
+          "code": "title",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 4,
+          "name": "平台售价",
+          "mustVal": true,
+          "code": "price",
+          "comment": "注释",
+          "type": "double"
+        },
+        {
+          "mustFill": true,
+          "order": 5,
+          "name": "市场价",
+          "mustVal": true,
+          "code": "marketPrice",
+          "comment": "注释",
+          "type": "double"
+        },
+        {
+          "mustFill": true,
+          "order": 6,
+          "name": "商品库存",
+          "mustVal": true,
+          "code": "quantity",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 7,
+          "name": "销售数量",
+          "mustVal": true,
+          "code": "num",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 8,
+          "name": "商品简述",
+          "mustVal": true,
+          "code": "brief",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 9,
+          "name": "商品详情",
+          "mustVal": true,
+          "code": "detail",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "编辑商品",
+      "comment": "注释",
+      "uri": "/goods/goodsSave.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 2,
+          "name": "分类ID",
+          "mustVal": true,
+          "code": "categoryId",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 3,
+          "name": "类别ID",
+          "mustVal": true,
+          "code": "typeId",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 4,
+          "name": "商品名称",
+          "mustVal": true,
+          "code": "title",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 5,
+          "name": "平台售价",
+          "mustVal": true,
+          "code": "price",
+          "comment": "注释",
+          "type": "double"
+        },
+        {
+          "mustFill": true,
+          "order": 6,
+          "name": "市场价",
+          "mustVal": true,
+          "code": "marketPrice",
+          "comment": "注释",
+          "type": "double"
+        },
+        {
+          "mustFill": true,
+          "order": 7,
+          "name": "商品库存",
+          "mustVal": true,
+          "code": "quantity",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 8,
+          "name": "销售数量",
+          "mustVal": true,
+          "code": "num",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 9,
+          "name": "商品简述",
+          "mustVal": true,
+          "code": "brief",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 10,
+          "name": "商品详情",
+          "mustVal": true,
+          "code": "detail",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "编辑商品类别",
+      "comment": "注释",
+      "uri": "/goods/goodsTypeSave.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "类别名称",
+          "mustVal": true,
+          "code": "title",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "类别描述",
+          "mustVal": true,
+          "code": "description",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "商品添加编辑",
+      "comment": "注释",
+      "uri": "/goods/getGoodsId.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "商品类别添加编辑",
+      "comment": "注释",
+      "uri": "/goods/getGoodsTypeId.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "商品删除",
+      "comment": "注释",
+      "uri": "/goods/goodsDelete.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "商品类别删除",
+      "comment": "注释",
+      "uri": "/goods/goodsTypeDelete.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "goodsComment列表验证",
+      "comment": "列表页查询参数验证",
+      "uri": "/plat/goodsComment/goodsCommentList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "star",
+          "mustVal": true,
+          "code": "star",
+          "type": "int",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "goodsComment列表验证",
+      "comment": "列表页查询参数验证",
+      "uri": "/plat/goodsComment/goodsCommentDelete.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "type": "int",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "添加Demo",
+      "comment": "注释",
+      "uri": "/demo/addDemo.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "姓名",
+          "mustVal": true,
+          "code": "name",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "学校",
+          "mustVal": true,
+          "code": "school",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "地址",
+          "mustVal": true,
+          "code": "address",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 4,
+          "name": "年龄",
+          "mustVal": true,
+          "code": "age",
+          "comment": "注释",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "平台添加订单",
+      "comment": "注册",
+      "uri": "/plat/payment/platPaymentSave.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 5,
+          "name": "Id",
+          "mustVal": false,
+          "code": "id",
+          "comment": "注册时间",
+          "type": "string"
+        },
+        {
+          "min": 6,
+          "mustFill": true,
+          "max": 20,
+          "order": 1,
+          "name": "支付人",
+          "mustVal": true,
+          "code": "payer",
+          "comment": "姓名",
+          "type": "string"
+        },
+        {
+          "min": 1,
+          "mustFill": true,
+          "max": 2,
+          "order": 2,
+          "name": "支付方式",
+          "stringValidator": "email",
+          "mustVal": true,
+          "code": "payWay",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "min": 1,
+          "mustFill": true,
+          "max": 4,
+          "order": 3,
+          "name": "支付状态",
+          "mustVal": true,
+          "code": "payStatus",
+          "comment": "年龄",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 4,
+          "name": "支付总金额",
+          "mustVal": true,
+          "code": "paySum",
+          "comment": "生日",
+          "type": "double"
+        },
+        {
+          "mustFill": true,
+          "order": 5,
+          "name": "应收金额",
+          "mustVal": true,
+          "code": "payAmount",
+          "comment": "注册时间",
+          "type": "double"
+        },
+        {
+          "mustFill": true,
+          "order": 6,
+          "name": "实际支付金额",
+          "mustVal": true,
+          "code": "payActual",
+          "comment": "注释",
+          "type": "double"
+        },
+        {
+          "mustFill": true,
+          "order": 7,
+          "name": "退款金额",
+          "mustVal": true,
+          "code": "payRefund",
+          "comment": "注释",
+          "type": "double"
+        },
+        {
+          "mustFill": true,
+          "order": 8,
+          "name": "支付人id",
+          "mustVal": true,
+          "code": "orderId",
+          "comment": "注释",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "当前用户收货列表",
+      "comment": "注释",
+      "uri": "/plat/customer/addressList.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "客户ID",
+          "mustVal": true,
+          "code": "customerId",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": false,
+          "max": 10,
+          "order": 2,
+          "name": "收货人",
+          "mustVal": true,
+          "code": "consignee",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "max": 11,
+          "order": 3,
+          "name": "电话",
+          "mustVal": true,
+          "code": "mobile",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "max": 6,
+          "order": 4,
+          "name": "邮编",
+          "mustVal": true,
+          "code": "postcodes",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "删除收货地址",
+      "comment": "注释",
+      "uri": "/plat/customer/deleteAddress.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "主键",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 2,
+          "name": "客户ID",
+          "mustVal": true,
+          "code": "customerId",
+          "comment": "注释",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "修改或增加收货地址跳转",
+      "comment": "注释",
+      "uri": "/plat/customer/address.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "主键",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "客户ID",
+          "mustVal": true,
+          "code": "customerId",
+          "comment": "注释",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "提交修改或增加收货地址",
+      "comment": "注释",
+      "uri": "/plat/customer/addressSave.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "主键",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 2,
+          "name": "客户ID",
+          "mustVal": true,
+          "code": "customerId",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": false,
+          "max": null,
+          "order": 3,
+          "name": "收货人",
+          "mustVal": true,
+          "code": "consignee",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "min": null,
+          "mustFill": true,
+          "max": 11,
+          "order": 4,
+          "name": "手机号",
+          "mustVal": true,
+          "code": "mobile",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "min": 6,
+          "mustFill": false,
+          "max": 6,
+          "order": 5,
+          "name": "邮编",
+          "mustVal": true,
+          "code": "postcodes",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 6,
+          "name": "收货地址",
+          "mustVal": true,
+          "code": "address",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "管理员管理",
+      "comment": "注释",
+      "uri": "/xx/sysManagerList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "姓名",
+          "mustVal": true,
+          "code": "name",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "手机",
+          "mustVal": true,
+          "code": "mobile",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "平台用户添加编辑功能",
+      "comment": "注释",
+      "uri": "/xx/sysManagerSave.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "min": 1,
+          "mustFill": true,
+          "max": 20,
+          "order": 2,
+          "name": "姓名",
+          "mustVal": true,
+          "code": "name",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 3,
+          "name": "账号",
+          "mustVal": true,
+          "code": "account",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "min": 6,
+          "mustFill": true,
+          "max": 20,
+          "order": 3,
+          "name": "密码",
+          "mustVal": true,
+          "code": "password",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 4,
+          "name": "电话",
+          "stringValidator": "mobile",
+          "mustVal": true,
+          "code": "mobile",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 5,
+          "name": "邮箱",
+          "stringValidator": "email",
+          "mustVal": true,
+          "code": "email",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "平台用户添加编辑",
+      "comment": "注释",
+      "uri": "/xx/sysManager.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "平台用户删除",
+      "comment": "注释",
+      "uri": "/xx/sysManagerDelete.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "管理员添加编辑功能",
+      "comment": "注释",
+      "uri": "/plat/sys/sysManagerSave.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "min": 1,
+          "mustFill": false,
+          "max": 20,
+          "order": 2,
+          "name": "姓名",
+          "mustVal": true,
+          "code": "name",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 3,
+          "name": "账号",
+          "mustVal": true,
+          "code": "account",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "min": 6,
+          "mustFill": true,
+          "max": 20,
+          "order": 3,
+          "name": "密码",
+          "mustVal": true,
+          "code": "password",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 4,
+          "name": "电话",
+          "stringValidator": "mobile",
+          "mustVal": true,
+          "code": "mobile",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 5,
+          "name": "邮箱",
+          "stringValidator": "email",
+          "mustVal": true,
+          "code": "email",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "所有客户列表",
+      "comment": "注释",
+      "uri": "/plat/customer/customerList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "昵称",
+          "mustVal": true,
+          "code": "nickname",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "电话",
+          "mustVal": true,
+          "code": "mobile",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "邮箱",
+          "mustVal": true,
+          "code": "email",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 4,
+          "name": "性别",
+          "mustVal": true,
+          "code": "sex",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": false,
+          "order": 5,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "删除客户",
+      "comment": "注释",
+      "uri": "/plat/customer/deleteCustomer.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "修改或添加客户跳转",
+      "comment": "注释",
+      "uri": "/plat/customer/customer.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "昵称",
+          "mustVal": true,
+          "code": "nickname",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "电话",
+          "mustVal": true,
+          "code": "mobile",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "邮箱",
+          "mustVal": true,
+          "code": "email",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 4,
+          "name": "性别",
+          "mustVal": true,
+          "code": "sex",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": false,
+          "order": 5,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": false,
+          "order": 6,
+          "name": "密码",
+          "mustVal": true,
+          "code": "password",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "订单详情",
+      "comment": "注释",
+      "uri": "/plat/order/OrderItemList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "订单ID",
+          "mustVal": true,
+          "code": "order_id",
+          "type": "string",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "商品ID",
+          "mustVal": true,
+          "code": "goods_id",
+          "type": "string",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "商品单价",
+          "mustVal": true,
+          "code": "goods_price",
+          "type": "string",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 4,
+          "name": "是否删除",
+          "mustVal": true,
+          "code": "is_del",
+          "type": "string",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "修改或添加客户提交",
+      "comment": "注释",
+      "uri": "/plat/customer/customerSave.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "昵称",
+          "mustVal": true,
+          "code": "nickname",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "电话",
+          "mustVal": true,
+          "code": "mobile",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "邮箱",
+          "mustVal": true,
+          "code": "email",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 4,
+          "name": "性别",
+          "mustVal": true,
+          "code": "sex",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": false,
+          "order": 5,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": false,
+          "order": 6,
+          "name": "密码",
+          "mustVal": true,
+          "code": "password",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 7,
+          "name": "用户名",
+          "mustVal": true,
+          "code": "account",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "平台用户添加编辑",
+      "comment": "注释",
+      "uri": "/plat/sys/sysManager.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "平台用户删除",
+      "comment": "注释",
+      "uri": "/plat/sys/deleteSysManager.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "查询订单",
+      "comment": "注释",
+      "uri": "/plat/order/orderList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "订单号",
+          "mustVal": true,
+          "code": "id",
+          "type": "string",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "用户ID",
+          "mustVal": true,
+          "code": "customerId",
+          "type": "string",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "订单状态",
+          "mustVal": true,
+          "code": "state",
+          "type": "string",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 4,
+          "name": "总价",
+          "mustVal": true,
+          "code": "totalPrice",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 5,
+          "name": "应付",
+          "mustVal": true,
+          "code": "pay",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 6,
+          "name": "用户地址ID",
+          "mustVal": true,
+          "code": "customerAddressId",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 7,
+          "name": "创建时间",
+          "mustVal": true,
+          "code": "ctime",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "编辑订单",
+      "comment": "注释",
+      "uri": "/plat/order/fetchOrder.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "订单号",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "用户ID",
+          "mustVal": true,
+          "code": "customerId",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "总价",
+          "mustVal": true,
+          "code": "totalPrice",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 4,
+          "name": "应付",
+          "mustVal": true,
+          "code": "pay",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 5,
+          "name": "订单状态",
+          "mustVal": true,
+          "code": "state",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 6,
+          "name": "用户地址ID",
+          "mustVal": true,
+          "code": "customerAddressId",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "前台商品详情",
+      "comment": "注释",
+      "uri": "/pub/goods/goodsDetailById.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "id",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string",
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "前台商品列表页面",
+      "comment": "注释",
+      "uri": "/pub/goods/goodsById.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "分类ID",
+          "mustVal": true,
+          "code": "categoryId",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "title",
+          "mustVal": true,
+          "code": "title",
+          "comment": "注释",
+          "type": "string",
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "管理员列表",
+      "comment": "注释",
+      "uri": "/plat/sys/managerList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "姓名",
+          "mustVal": true,
+          "code": "name",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "手机",
+          "mustVal": true,
+          "code": "mobile",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "管理员角色中间表",
+      "comment": "注释",
+      "uri": "/plat/sys/managerRoleList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "管理员ID",
+          "mustVal": true,
+          "code": "managerId",
+          "type": "int",
+          "comment": "注释"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "角色ID",
+          "mustVal": true,
+          "code": "roleId",
+          "type": "int",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "当前客户购物车列表",
+      "comment": "注释",
+      "uri": "/plat/customer/cartList.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "客户ID",
+          "mustVal": true,
+          "code": "customerId",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "商品ID",
+          "mustVal": true,
+          "code": "goodsId",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "商品名称",
+          "mustVal": true,
+          "code": "title",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 4,
+          "name": "是否上架",
+          "mustVal": true,
+          "code": "isOnsale",
+          "comment": "注释",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "权限列表",
+      "comment": "注释",
+      "uri": "/plat/sys/permissionList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "权限名",
+          "mustVal": true,
+          "code": "name",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "URL",
+          "mustVal": true,
+          "code": "url",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "权限列表",
+      "comment": "注释",
+      "uri": "/plat/sys/sysPermission.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "权限列表",
+      "comment": "注释",
+      "uri": "/plat/sys/sysPermissionSave.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "权限名",
+          "mustVal": true,
+          "code": "name",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "URL",
+          "mustVal": true,
+          "code": "url",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "删除管理员",
+      "comment": "注释",
+      "uri": "/plat/sys/sysPermissionDelete.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "销售排行",
+      "comment": "注释",
+      "uri": "/plat/report/salesRank.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "开始日期",
+          "mustVal": true,
+          "code": "startTime",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "结束日期",
+          "mustVal": true,
+          "code": "endTime",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "公用文件列表",
+      "comment": "注释",
+      "uri": "/plat/common/fileList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "模块",
+          "mustVal": true,
+          "code": "type",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "对象ID",
+          "mustVal": true,
+          "code": "objectId",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "原文件名",
+          "mustVal": true,
+          "code": "fileName",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 4,
+          "name": "内容类型",
+          "mustVal": true,
+          "code": "contentType",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "添加编辑公用文件",
+      "comment": "注释",
+      "uri": "/plat/common/fileSave.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "id",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 2,
+          "name": "模块",
+          "mustVal": true,
+          "code": "type",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 3,
+          "name": "对象ID",
+          "mustVal": true,
+          "code": "objectId",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 4,
+          "name": "文件名",
+          "mustVal": true,
+          "code": "fileName",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 5,
+          "name": "原文件名",
+          "mustVal": true,
+          "code": "oldName",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": true,
+          "order": 6,
+          "name": "内容类型",
+          "mustVal": true,
+          "code": "contentType",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 7,
+          "name": "文件长度",
+          "mustVal": true,
+          "code": "length",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 8,
+          "name": "存储路径",
+          "mustVal": true,
+          "code": "path",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "文件添加编辑跳转",
+      "comment": "注释",
+      "uri": "/plat/common/file.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "删除文件",
+      "comment": "注释",
+      "uri": "/plat/common/deleteFile.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "日志文件列表",
+      "comment": "注释",
+      "uri": "/plat/common/logList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "类别",
+          "mustVal": true,
+          "code": "type",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "操作人",
+          "mustVal": true,
+          "code": "operatorId",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "角色列表",
+      "comment": "注释",
+      "uri": "/plat/sys/sysRoleList.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "角色名",
+          "mustVal": true,
+          "code": "name",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "min": null,
+          "mustFill": false,
+          "order": 2,
+          "name": "说明",
+          "mustVal": true,
+          "code": "remark",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "角色添加编辑跳转",
+      "comment": "注释",
+      "uri": "/plat/sys/sysRoleSave.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "角色名",
+          "mustVal": true,
+          "code": "name",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "min": null,
+          "mustFill": false,
+          "order": 2,
+          "name": "说明",
+          "mustVal": true,
+          "code": "remark",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "删除角色",
+      "comment": "注释",
+      "uri": "/plat/sys/sysRoleDelete.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "角色编辑跳转",
+      "comment": "注释",
+      "uri": "/plat/sys/sysRole.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "移动端修改个人资料",
+      "comment": "注释",
+      "uri": "/updateProfile.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "昵称",
+          "mustVal": true,
+          "code": "nickname",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "性别",
+          "mustVal": true,
+          "code": "sex",
+          "comment": "注释",
+          "type": "int"
+        },
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "登录检查",
+      "comment": "注释",
+      "uri": "/plat/sys/login.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "用户名",
+          "mustVal": true,
+          "code": "account",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "密码",
+          "mustVal": true,
+          "code": "password",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "移动端登录",
+      "comment": "注释",
+      "uri": "/login.do",
+      "fields": [
+        {
+          "min": 1,
+          "mustFill": true,
+          "max": 20,
+          "order": 1,
+          "name": "账号",
+          "mustVal": true,
+          "code": "account",
+          "comment": "注释",
+          "type": "string"
+        },
+        {
+          "min": 6,
+          "mustFill": true,
+          "max": 20,
+          "order": 2,
+          "name": "密码",
+          "mustVal": true,
+          "code": "password",
+          "comment": "注释",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "角色权限",
+      "comment": "注释",
+      "uri": "/plat/sys/sysRolePermisssion.do",
+      "fields": [
+        {
+          "mustFill": false,
+          "order": 1,
+          "name": "ID",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "int",
+          "isArray": false
+        },
+        {
+          "mustFill": false,
+          "order": 2,
+          "name": "角色ID",
+          "mustVal": true,
+          "code": "roleId",
+          "comment": "注释",
+          "type": "int",
+          "isArray": false
+        },
+        {
+          "mustFill": false,
+          "order": 3,
+          "name": "权限ID",
+          "mustVal": true,
+          "code": "permissionId",
+          "comment": "注释",
+          "type": "int",
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "移动端当前用户信息跳转",
+      "comment": "注释",
+      "uri": "/customerProfile.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "id",
+          "mustVal": true,
+          "code": "id",
+          "type": "string",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "移动端当前用户修改头像",
+      "comment": "注释",
+      "uri": "/mobile/customerProfileHeader.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "id",
+          "mustVal": true,
+          "code": "id",
+          "type": "string",
+          "comment": "注释"
+        }
+      ]
+    },
+    {
+      "name": "购物车添加",
+      "comment": "注释",
+      "uri": "/order/addCar.do",
+      "fields": [
+        {
+          "min": 0,
+          "mustFill": true,
+          "max": 10,
+          "order": 1,
+          "name": "customerId",
+          "mustVal": true,
+          "code": "customerId",
+          "comment": "客户Id",
+          "type": "string",
+          "isArray": false
+        },
+        {
+          "min": 0,
+          "mustFill": true,
+          "max": 10,
+          "order": 2,
+          "name": "goodsId",
+          "mustVal": true,
+          "code": "goodsId",
+          "comment": "商品ID",
+          "type": "string",
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "客户收货地址跳转",
+      "comment": "注释",
+      "uri": "/mobile/address.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "id",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string",
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "删除客户收货地址",
+      "comment": "注释",
+      "uri": "/mobile/deleteAddress.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "id",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string",
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "客户收货地址存储",
+      "comment": "注释",
+      "uri": "/mobile/addressSave.do",
+      "fields": [
+        {
+          "mustFill": true,
+          "order": 1,
+          "name": "收货人",
+          "mustVal": true,
+          "code": "consignee",
+          "comment": "注释",
+          "type": "string",
+          "isArray": false
+        },
+        {
+          "mustFill": true,
+          "order": 2,
+          "name": "收货人手机",
+          "mustVal": true,
+          "code": "mobile",
+          "comment": "注释",
+          "type": "string",
+          "isArray": false
+        },
+        {
+          "mustFill": true,
+          "order": 3,
+          "name": "收货地址",
+          "mustVal": true,
+          "code": "address",
+          "comment": "注释",
+          "type": "string",
+          "isArray": false
+        },
+        {
+          "mustFill": false,
+          "order": 4,
+          "name": "邮政编码",
+          "mustVal": true,
+          "code": "postcodes",
+          "comment": "注释",
+          "type": "string",
+          "isArray": false
+        },
+        {
+          "mustFill": false,
+          "order": 4,
+          "name": "id",
+          "mustVal": true,
+          "code": "id",
+          "comment": "注释",
+          "type": "string",
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "商品详情",
+      "uri": "/pub/goods/goodsDetail.do",
+      "comment": "注释",
+      "fields": [
+        {
+          "order": 1,
+          "name": "ID",
+          "code": "id",
+          "type": "int",
+          "comment": "注释",
+          "mustVal": false,
+          "mustFill": false,
+          "isArray": false
+        }
+      ]
+    }
+  ],
+  "systemName": "OM商城系统",
+  "urlConventions": "1、系统的每一个URI表示一个操作，代表一个资源。\n2、参数验证根据每个URI的json参数验证配置，可以进行服务器端统一的参数验证。"
+}

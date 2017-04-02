@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/OnlineMall/!svn/ver/935/code/server/om/src/com/platform/dao
+END
+PlatOrderItemDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/OnlineMall/!svn/ver/614/code/server/om/src/com/platform/dao/PlatOrderItemDAO.java
+END
+PlatCommonLogDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/OnlineMall/!svn/ver/179/code/server/om/src/com/platform/dao/PlatCommonLogDAO.java
+END
+PlatSysManagerRoleDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/729/code/server/om/src/com/platform/dao/PlatSysManagerRoleDAO.java
+END
+PlatOrderHistoryDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/669/code/server/om/src/com/platform/dao/PlatOrderHistoryDAO.java
+END
+PlatGoodsCommentDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/585/code/server/om/src/com/platform/dao/PlatGoodsCommentDAO.java
+END
+PlatSysRoleDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/OnlineMall/!svn/ver/755/code/server/om/src/com/platform/dao/PlatSysRoleDAO.java
+END
+PlatCustomerDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/OnlineMall/!svn/ver/250/code/server/om/src/com/platform/dao/PlatCustomerDAO.java
+END
+PlatGoodsAttrValueDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/618/code/server/om/src/com/platform/dao/PlatGoodsAttrValueDAO.java
+END
+PlatGoodsAttrDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/OnlineMall/!svn/ver/935/code/server/om/src/com/platform/dao/PlatGoodsAttrDAO.java
+END
+PlatCustomerAddressDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/OnlineMall/!svn/ver/387/code/server/om/src/com/platform/dao/PlatCustomerAddressDAO.java
+END
+CommonDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/OnlineMall/!svn/ver/507/code/server/om/src/com/platform/dao/CommonDAO.java
+END
+PlatGoodsCategoryDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/OnlineMall/!svn/ver/569/code/server/om/src/com/platform/dao/PlatGoodsCategoryDAO.java
+END
+PlatOrderPaymentDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/395/code/server/om/src/com/platform/dao/PlatOrderPaymentDAO.java
+END
+PlatSysManagerDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/OnlineMall/!svn/ver/474/code/server/om/src/com/platform/dao/PlatSysManagerDAO.java
+END
+PlatSysRolePermissionDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/OnlineMall/!svn/ver/233/code/server/om/src/com/platform/dao/PlatSysRolePermissionDAO.java
+END
+PlatOrderDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/OnlineMall/!svn/ver/436/code/server/om/src/com/platform/dao/PlatOrderDAO.java
+END
+PlatGoodsDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/OnlineMall/!svn/ver/935/code/server/om/src/com/platform/dao/PlatGoodsDAO.java
+END
+PlatCustomerCartDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/505/code/server/om/src/com/platform/dao/PlatCustomerCartDAO.java
+END
+PlatReportDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/OnlineMall/!svn/ver/699/code/server/om/src/com/platform/dao/PlatReportDAO.java
+END
+PlatGoodsTypeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/OnlineMall/!svn/ver/621/code/server/om/src/com/platform/dao/PlatGoodsTypeDAO.java
+END
+PlatCustomerSnsDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/OnlineMall/!svn/ver/207/code/server/om/src/com/platform/dao/PlatCustomerSnsDAO.java
+END
+PlatSysPermissionDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/OnlineMall/!svn/ver/755/code/server/om/src/com/platform/dao/PlatSysPermissionDAO.java
+END
+PlatCommonFileDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/OnlineMall/!svn/ver/250/code/server/om/src/com/platform/dao/PlatCommonFileDAO.java
+END
+XXPlatSysManagerDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/362/code/server/om/src/com/platform/dao/XXPlatSysManagerDAO.java
+END

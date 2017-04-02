@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/OnlineMall/!svn/ver/85/code/server/om/build/classes/conf
+END
+spring-model.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/OnlineMall/!svn/ver/85/code/server/om/build/classes/conf/spring-model.xml
+END
+spring-mvc.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/OnlineMall/!svn/ver/69/code/server/om/build/classes/conf/spring-mvc.xml
+END
+mybatis-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/OnlineMall/!svn/ver/67/code/server/om/build/classes/conf/mybatis-config.xml
+END

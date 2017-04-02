@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pub.dao.PubSysPermissionDAO">
+
+	<!-- 查询所有 -->
+	<select id="selectSysPermission" resultType="map">
+		select
+		id as id ,
+		name as name ,
+		url as url ,
+		ctime as ctime ,
+		utime as utime ,
+		is_del as isDel
+		from om_sys_permission
+		<where>
+			<if test="name != null and name !='' ">
+				and name like concat('%',#{name},'%')
+			</if>
+			<if test="url !=null and url !='' ">
+				and url like concat('%',#{url},'%')
+			</if>
+		</where>
+		<if test=" commonOrder !=null and  commonOrder != ' ' ">
+			order by ${commonOrder}
+			<if test="commonDesc !=null and conmonDesc!= ''">
+				desc
+			</if>
+		</if>
+	</select>
+
+	<!-- 修改权限 -->
+	<update id="updateSysPermission" parameterType="map">
+		update om_sys_permission set
+		<if test="name != null and name !='' ">
+			name=#{name},
+		</if>
+		<if test="url != null and url !='' ">
+			url=#{url}
+		</if>
+		where id=#{id}
+	</update>
+
+	<!-- 增加权限 -->
+	<insert id="insertSysPermission" parameterType="map">
+		insert into om_sys_permission(
+		<if test="name != null and name !='' ">
+			name,
+		</if>
+		<if test="url != null and url !='' ">
+			url,
+		</if>
+		ctime
+		)
+		values(  
+		#{name},
+		#{url},
+		now()
+		)
+	</insert>
+
+</mapper>

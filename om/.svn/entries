@@ -1,0 +1,86 @@
+10
+
+dir
+1161
+https://192.168.0.200/svn/OnlineMall/code/server/om
+https://192.168.0.200/svn/OnlineMall
+
+
+
+2017-03-30T09:53:49.592728Z
+1161
+admin
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+fe2689d8-1739-0844-a1f6-9fbe11ad40cf
+
+build
+dir
+
+test
+dir
+
+.project
+file
+
+
+
+
+2017-03-16T04:49:13.660687Z
+77cbf0dd208177a9757708252e9a81b8
+2017-02-23T02:41:10.131102Z
+67
+admin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1497
+
+src
+dir
+
+.externalToolBuilders
+dir
+
+WebContent
+dir
+
+bin
+dir
+
+resources
+dir
+
+.settings
+dir
+

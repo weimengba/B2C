@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>电商</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="shortcut icon" href="/favicon.ico">
+<!--
+        	SUI CSS
+        -->
+<link rel="stylesheet" href="assets/js/sui/sm.css">
+<link rel="stylesheet" href="assets/js/sui/sm-extend.css">
+<!--
+        	ShareBike CSS
+        -->
+<link rel="stylesheet" href="assets/css/common.css">
+<!--
+        	JS zepto,SUI全局配置config,百度地图API
+        -->
+<script type='text/javascript' src='assets/js/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='assets/js/config.js' charset='utf-8'></script>
+
+</head>
+
+<body>
+	<div class="page-group">
+
+
+
+		<div class="page page-current" id='router'>
+			<header class="bar bar-nav">
+				<h1 class='title'>表单</h1>
+			</header>
+			<div class="content">
+				<div class="list-block">
+					<ul>
+						<!-- Text inputs -->
+						<li>
+							<div class="item-content">
+								<div class="item-media">
+									<i class="icon icon-form-name"></i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title label">姓名</div>
+									<div class="item-input">
+										<input type="text" placeholder="Your name">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-media">
+									<i class="icon icon-form-email"></i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title label">邮箱</div>
+									<div class="item-input">
+										<input type="email" placeholder="E-mail">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-media">
+									<i class="icon icon-form-password"></i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title label">密码</div>
+									<div class="item-input">
+										<input type="password" placeholder="Password" class="">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-media">
+									<i class="icon icon-form-gender"></i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title label">性别</div>
+									<div class="item-input">
+										<select>
+											<option>Male</option>
+											<option>Female</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- Date -->
+						<li>
+							<div class="item-content">
+								<div class="item-media">
+									<i class="icon icon-form-calendar"></i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title label">生日</div>
+									<div class="item-input">
+										<input type="date" placeholder="Birth day" value="2014-04-30">
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- Switch (Checkbox) -->
+						<li>
+							<div class="item-content">
+								<div class="item-media">
+									<i class="icon icon-form-toggle"></i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title label">开关</div>
+									<div class="item-input">
+										<label class="label-switch"> <input type="checkbox">
+											<div class="checkbox"></div>
+										</label>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="align-top">
+							<div class="item-content">
+								<div class="item-media">
+									<i class="icon icon-form-comment"></i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title label">文本域</div>
+									<div class="item-input">
+										<textarea></textarea>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="content-block">
+					<div class="row">
+						<div class="col-50">
+							<a href="#" class="button button-big button-fill button-danger">取消</a>
+						</div>
+						<div class="col-50">
+							<a href="#" class="button button-big button-fill button-success">提交</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+	<!--** SUI 弹出框 **-->
+	<div class="panel-overlay"></div>
+
+	<!--** SUI 侧边栏 **-->
+	<div id='bike-panel-left' class="panel panel-left panel-reveal">
+		<div class="content-block">
+			<p>侧栏</p>
+			<p>
+				<a href="#" class="close-panel">关闭</a>
+			</p>
+		</div>
+	</div>
+
+	<!--** SUI JS **-->
+	<script type='text/javascript' src='assets/js/sui/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='assets/js/sui/sm-extend.min.js' charset='utf-8'></script>
+	<!-- 各个页面自身的JS -->
+
+
+
+	<!-- 最后加载sharebike，调用$.init() -->
+	<script type='text/javascript' src='assets/js/common.js' charset='utf-8'></script>
+</body>
+
+</html>

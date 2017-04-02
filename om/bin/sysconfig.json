@@ -1,0 +1,14 @@
+{
+  "id": "12345678",
+  "globalConfigValue": "d:/upload/",
+  "globalConfigKey": "SYS_UPLOAD_GOOD_IMAGE_DIR",
+  "systemName": "OM电商系统——系统配置",
+  "systemConfig": {
+    "SYS_SYSNAME": "OM电商系统",
+    "SYS_SALT": "alsdfpouq;lk123049709852345",
+    "SYS_PAGE_SIZE": "10",
+    "SYS_UPLOAD_DIR": "d:/upload",
+    "SYS_UPLOAD_GOOD_IMAGE_DIR": "d:/upload/",
+    "SYS_IMAGE_PREFIX": "/om/image.jsp?path="
+  }
+}

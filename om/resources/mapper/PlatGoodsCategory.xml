@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.PlatGoodsCategoryDAO">
+
+	<!-- 查询所有商品分类 -->
+	<select id="selectGoodsCategory" resultType="map">
+		  
+	
+	
+		SELECT
+		    cat1.id               as id           ,           	
+			cat1.name             as name         ,    
+			cat1.level            as level        ,         
+			cat2.name             as parentId     , 
+			cat2.id               as cid          ,        
+			cat1.is_show          as isShow       ,   
+			cat1.ctime            as ctime        ,      
+			cat1.utime            as utime        ,           
+			cat1.is_del           as isDel        
+		FROM
+		goods_category_v AS cat1 LEFT JOIN goods_category_v AS cat2 ON cat1.parent_id=cat2.id 
+		<where>
+			<if test="name != null and name !='' ">
+				and cat1.name like concat('%',#{name},'%')
+			</if>
+			
+		</where>		
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+	</select>
+	
+	<!-- 增加商品分类 -->
+	<insert id="insertGoodsCategory" parameterType="map"
+		useGeneratedKeys="true" keyProperty="id">
+		insert into om_goods_category (
+		<if test="name != null and name !='' ">
+			name,
+		</if>
+		<if test="level != null and level !='' ">
+			level,
+		</if>
+		<if test="parentId != null and parentId !='' ">
+			parent_id,
+		</if>
+		<if test="isShow != null and isShow !='' ">
+			is_show,
+		</if>
+		ctime
+		)
+		values (
+		<if test="name != null and name !='' ">
+			#{name},
+		</if>
+		<if test="level != null and level !='' ">
+			#{level},
+		</if>
+		<if test="parentId != null and parentId !='' ">
+			#{parentId},
+		</if>
+		<if test="isShow != null and isShow !='' ">
+			#{isShow},
+		</if>
+		now()
+		)
+	</insert>
+	
+	<!-- 修改商品分类 -->
+	<update id="updateGoodsCategoryById"  parameterType="map">
+		update om_goods_category set 
+		<if test="name != null and name !='' ">
+			name=#{name},
+		</if>
+		<if test="level != null and level !='' ">
+			level=#{level},
+		</if>
+		<if test="parentId != null and parentId !='' ">
+			parent_id=#{parentId},
+		</if>
+		<if test="is_show != null and isShow !='' ">
+			is_show=#{isShow},
+		</if>
+		id=#{id}
+		where id=#{id}		
+	</update>
+
+</mapper>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.PlatGoodsAttrDAO">
+
+<!-- 查询所有商品属性 -->
+	<select id="selectGoodsAttr" resultType="map">
+		SELECT
+			goods_attr.id                  as id               ,          
+			goods_attr.title               as title            ,
+			goods_type.id                  as gid              ,          
+			goods_type.title               as typeId           ,          
+			data_type                      as dataType         ,          
+			choose_value                   as chooseValue      ,          
+			is_condition                   as isCondition      ,          
+			show_order                     as showOrder        ,          
+			goods_attr.ctime               as ctime                    
+		
+		FROM
+		goods_attr_v AS goods_attr LEFT JOIN goods_type_v AS goods_type ON goods_attr.type_id=goods_type.id
+		<where>
+			<if test="title != null and title !='' ">
+				and goods_attr.title like concat('%',#{title},'%')
+			</if>
+		</where>		
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+	</select>
+	
+	<!-- 增加商品属性 -->
+	<insert id="insertAttr" parameterType="map"
+		useGeneratedKeys="true" keyProperty="id">
+		insert into om_goods_attr (
+		<if test="title != null and title !='' ">
+			title,
+		</if>
+		<if test="typeId != null and typeId !='' ">
+			type_id,
+		</if>
+		<if test="dataType != null and dataType !='' ">
+			data_type,
+		</if>
+		<if test="chooseValue != null and chooseValue !='' ">
+			choose_value,
+		</if>
+		<if test="isCondition != null and isCondition !='' ">
+			is_condition,
+		</if>
+		<if test="showOrder != null and showOrder !='' ">
+			show_order,
+		</if>
+		ctime
+		)
+		values (
+		<if test="title != null and title !='' ">
+			#{title},
+		</if>
+		<if test="typeId != null and typeId !='' ">
+			#{typeId},
+		</if>
+		<if test="dataType != null and dataType !='' ">
+			#{dataType},
+		</if>
+		<if test="chooseValue != null and chooseValue !='' ">
+			#{chooseValue},
+		</if>
+		<if test="isCondition != null and isCondition !='' ">
+			#{isCondition},
+		</if>
+		<if test="showOrder != null and showOrder !='' ">
+			#{showOrder},
+		</if>
+		now()
+		)
+	</insert>
+	
+	<!-- 修改商品属性 -->
+	<update id="updateAttrById"  parameterType="map">
+		update om_goods_attr set 
+		<if test="title != null and title !='' ">
+			title=#{title},
+		</if>
+		<if test="typeId != null and typeId !='' ">
+			type_id=#{typeId},
+		</if>
+		<if test="dataType != null and dataType !='' ">
+			data_type=#{dataType},
+		</if>
+		<if test="chooseValue != null and chooseValue !='' ">
+			choose_value=#{chooseValue},
+		</if>
+		<if test="isCondition != null and isCondition !='' ">
+			is_condition=#{isCondition},
+		</if>
+		<if test="showOrder != null and showOrder !='' ">
+			show_order=#{showOrder},
+		</if>
+		id=#{id}
+		where id=#{id}		
+	</update>
+<select id="selectGoodsAttrByTypeId" parameterType="map" resultType="map">
+	select
+	id,
+	title
+	from
+	om_goods_attr
+	<where>
+	    <if test="typeId != null and typeId !='' ">
+			and type_id=#{typeId}
+		</if>
+    </where>
+	</select>
+
+</mapper>

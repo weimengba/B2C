@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/OnlineMall/!svn/ver/1161/code/server/om/src/com/pub/dao
+END
+PubGoodsTypeAttrValueDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/226/code/server/om/src/com/pub/dao/PubGoodsTypeAttrValueDAO.java
+END
+PubOrderViewDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/OnlineMall/!svn/ver/766/code/server/om/src/com/pub/dao/PubOrderViewDAO.java
+END
+PubCustomerAddressDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/OnlineMall/!svn/ver/960/code/server/om/src/com/pub/dao/PubCustomerAddressDAO.java
+END
+PubGoodsTypeAttrDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/OnlineMall/!svn/ver/226/code/server/om/src/com/pub/dao/PubGoodsTypeAttrDAO.java
+END
+PubSysRolePermissionDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/OnlineMall/!svn/ver/355/code/server/om/src/com/pub/dao/PubSysRolePermissionDAO.java
+END
+PubSysManagerDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/OnlineMall/!svn/ver/355/code/server/om/src/com/pub/dao/PubSysManagerDAO.java
+END
+PubOrderPaymentDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/OnlineMall/!svn/ver/1015/code/server/om/src/com/pub/dao/PubOrderPaymentDAO.java
+END
+PubGoodsCategoryDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/OnlineMall/!svn/ver/226/code/server/om/src/com/pub/dao/PubGoodsCategoryDAO.java
+END
+PubCustomerCartDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/OnlineMall/!svn/ver/963/code/server/om/src/com/pub/dao/PubCustomerCartDAO.java
+END
+PubGoodsDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/OnlineMall/!svn/ver/1161/code/server/om/src/com/pub/dao/PubGoodsDAO.java
+END
+PubOrderDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/OnlineMall/!svn/ver/949/code/server/om/src/com/pub/dao/PubOrderDAO.java
+END
+DemoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/OnlineMall/!svn/ver/890/code/server/om/src/com/pub/dao/DemoDAO.java
+END
+PubGoodsTypeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/OnlineMall/!svn/ver/211/code/server/om/src/com/pub/dao/PubGoodsTypeDAO.java
+END
+PubCustomerSnsDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/OnlineMall/!svn/ver/208/code/server/om/src/com/pub/dao/PubCustomerSnsDAO.java
+END
+PubSysPermissionDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/OnlineMall/!svn/ver/355/code/server/om/src/com/pub/dao/PubSysPermissionDAO.java
+END
+PubCommonFileDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/OnlineMall/!svn/ver/610/code/server/om/src/com/pub/dao/PubCommonFileDAO.java
+END
+PubOrderItemDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/OnlineMall/!svn/ver/852/code/server/om/src/com/pub/dao/PubOrderItemDAO.java
+END
+PubCommonLogDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/OnlineMall/!svn/ver/153/code/server/om/src/com/pub/dao/PubCommonLogDAO.java
+END
+PubSysManagerRoleDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/OnlineMall/!svn/ver/355/code/server/om/src/com/pub/dao/PubSysManagerRoleDAO.java
+END
+WeixinDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/OnlineMall/!svn/ver/1044/code/server/om/src/com/pub/dao/WeixinDAO.java
+END
+PubOrderHistoryDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/OnlineMall/!svn/ver/129/code/server/om/src/com/pub/dao/PubOrderHistoryDAO.java
+END
+PubGoodsCommentDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/OnlineMall/!svn/ver/941/code/server/om/src/com/pub/dao/PubGoodsCommentDAO.java
+END
+RedisDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/OnlineMall/!svn/ver/786/code/server/om/src/com/pub/dao/RedisDAO.java
+END
+PubSysRoleDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/OnlineMall/!svn/ver/355/code/server/om/src/com/pub/dao/PubSysRoleDAO.java
+END
+PubCustomerDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/OnlineMall/!svn/ver/842/code/server/om/src/com/pub/dao/PubCustomerDAO.java
+END

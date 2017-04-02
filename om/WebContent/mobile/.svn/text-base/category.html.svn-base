@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>电商</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="shortcut icon" href="assets/img/favicon.ico">
+		
+		<!--SUI CSS-->
+		<link rel="stylesheet" href="assets/js/sui/sm.css">
+		<link rel="stylesheet" href="assets/js/sui/sm-extend.css">
+		<!--OM CSS-->
+		<link rel="stylesheet" href="assets/css/common.css">
+		<!--JS zepto,SUI全局配置config,百度地图API-->
+		<script type='text/javascript' src='assets/js/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/config.js' charset='utf-8'></script>	
+	</head>
+	<body>
+		<div class="page" id="om-category">
+			<header class="bar bar-nav u-title">
+				<a class="icon icon-left pull-left back"></a>
+  				<a class="icon icon-cart pull-right"></a>
+				<h1 id="title" class="title tit-text">酒乐拍</h1>
+			</header>
+			<div id="category-content" class="content">				
+				
+			</div>			
+		</div>
+		
+		<!--** SUI JS **-->
+		<script type='text/javascript' src='assets/js/sui/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/sui/sm-extend.min.js' charset='utf-8'></script>
+		<!-- 各个页面自身的JS -->
+		<script type='text/javascript' src='assets/js/category.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/goodsLists.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/goodsDetails.js' charset='utf-8'></script>		
+		<!-- 最后加载sharebike，调用$.init() -->
+		<script type='text/javascript' src='assets/js/common.js' charset='utf-8'></script>
+	</body>
+</html>

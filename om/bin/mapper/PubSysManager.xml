@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pub.dao.PubSysManagerDAO">
+
+	<!-- 查询所有用户 -->
+	<select id="selectSysManger" resultType="map">
+		select
+			id				as			id				,
+			name			as			name			,
+			account			as			account			,
+			password		as			password		,
+			mobile			as			mobile			,
+			email			as			email			,
+			ctime			as			ctime			,
+			utime			as			utime			,
+			is_del			as			isDel	
+		from om_sys_manager
+	</select>
+
+	<!-- 增加用户 -->
+	<insert id="insertSysManger" parameterType="map">
+		insert into om_sys_manager(
+		<if test="name != null and name !='' ">
+			name,
+		</if>
+		<if test="account != null and account !='' ">
+			account,
+		</if>
+		<if test="password != null and password !='' ">
+			password,
+		</if>
+		<if test="mobile != null and mobile !='' ">
+			mobile,
+		</if>
+		<if test="email != null and email !='' ">
+			email,
+		</if>  
+				ctime
+		)	
+		 values(
+		 		#{name},
+		 		#{account},
+		 		#{password},
+		 		#{mobile},
+		 		#{email},
+		 		now()
+		 		) 
+	</insert>
+	
+
+	<!-- 修改用户 -->
+	<update id="updateSysManger" parameterType="map">
+		update om_sys_manager set
+		<if test="name != null and name !='' ">
+			name=#{name},
+		</if> 
+		<if test="password != null and password !='' ">
+			password=#{password},
+		</if>
+		<if test="mobile != null and mobile !='' ">
+			mobile=#{mobile},
+		</if>
+		<if test="email != null and email !='' ">
+			email=#{email}
+		</if>
+			where id=#{id}
+		
+	</update>
+	
+</mapper>

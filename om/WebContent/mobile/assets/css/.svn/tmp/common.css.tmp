@@ -1,0 +1,210 @@
+/*瑕嗙洊SUI鏍峰紡寮�*/
+.bar {
+	background-color: black;
+}
+
+.bar .icon {
+	color: red;
+}
+
+.title {
+	color: red;
+	font-size: 1rem;
+}
+
+.page,.page-group {
+	background: white;
+}
+
+element.style {
+	
+}
+
+.swiper-container {
+	height: 8rem;
+}
+
+.swiper-slide img {
+	width: 100%;
+}
+
+.om-header {
+	opacity: 0.5;
+}
+
+
+
+
+/*瑕嗙洊SUI鏍峰紡缁撴潫*/
+
+/*OM鏍峰紡寮�*/
+.om-flex {
+	/* border: solid 1px red; */
+	height: 5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	display: flex;
+	align-items: center;
+	background-color: lightblue;
+}
+
+.om-item {
+	width: 2rem;
+	height: 2rem;
+	border: solid 2px black;
+	border-radius: 0.6rem;
+}
+
+/**
+ * 涓汉涓績鏍峰紡
+ */
+#center li{
+	list-style: none;
+}
+#center ul{ 
+	width: 100; 
+	height: 120px; 
+	padding-left: 20px;
+	margin-top: 0px;
+}
+
+#loginYes{
+	display:none;
+}
+#loginYes .header{
+	float:left;
+}
+.center-header-img{
+	border-radius: 50px; 
+	height: 80px; 
+	width: 80px; 
+	margin-top: 20px; 
+	border: solid 3px white;
+}
+#loginYes .text{
+	float: left; 
+	margin-left: 4%;
+}
+#loginYes .messageconfig{
+	float: right; 
+	margin-right: 20px;
+}
+#loginYes .messageconfig div{
+	color: white; 
+	margin-top: 10px; 
+	font-size: 24px;
+}
+#loginYes .nickname{
+	margin-top: 16px; 
+	color: white; 
+	font-size: 18px;
+}
+#loginYes .logintime{
+	margin-top: 30px; 
+	color: white; 
+	font-size: 12px;
+}
+
+#loginNo li{
+	float: left; 
+	margin-left: 40%;
+}
+#loginNo li a{
+	float: left;
+	margin-top: 50%;
+	color: white;
+	font-size: 18px;
+}
+
+.center-order{
+	margin-top: -26px;
+	border-top: solid 10px gainsboro;
+	border-bottom: solid 1px gainsboro; 
+	width: 100%; height:60px;
+	line-height: 50px;
+}
+.center-order *{
+	line-height: 50px;
+}
+.center-order a{
+	color: gray;
+	font-size: 14px;
+	margin-right: 10px;
+	float: right;
+}
+.center-order b{
+	color: black;
+	font-size: 20px;
+	margin-left: 8%;
+}
+.center-order span{
+	color:gray;float: right;margin-right: 20px;
+}
+
+.center-menu{
+	margin-top: 20px;
+	border-bottom: 10px solid gainsboro; 
+	height: 100px;
+}
+.center-menu div{
+	text-align: center;
+	float:left;
+	width: 25%;
+	height:100px;
+}
+.center-menu span{
+	margin-top: 10px;
+	color: orangered;
+	font-size: 22px;
+	font-weight:900;
+}
+.center-menu a{
+	color: black;
+	font-size: 14px;
+}
+.center-other{
+	border-bottom: solid 1px gainsboro;
+	height: 60px;
+	line-height: 50px;
+}
+.center-other span{
+	color:black;
+	float: right;
+	margin-right: 20px;
+}
+.center-other b{
+	color:black;
+}
+
+/*goodsDetails鍟嗗搧璇︽儏妯″潡*/
+html {font-size: 16px;}
+body {margin: 0px; font-size: 0.75rem;}
+.content {top:0}
+.top-nav {width: 30px;height: 30px;line-height: 30px; background-color: #CCCCCC;opacity: 0.8; color: white; border-radius: 50%;z-index: 3;position: absolute;top: 6px;}
+.nav-left {left: 10px;}
+.nav-right {right: 10px;}
+.u-goods-img {width: 100%;height: 230px;z-index: 2;}
+.u-details-title {margin: 0;padding: 5px 10px 0px 20px; text-indent: 0.5rem;}
+.u-price {text-indent: 1.5rem;}
+.u-market-price {color: gray;text-decoration: line-through;font-style: italic;}
+.u-om-price {color: red;font-weight: bold;}
+.card-header p {margin: 0;padding: 0;}
+.details-high {height: 30px;line-height: 30px;border-bottom: 1px dashed darkgray;}
+
+/*login1的样式*/
+div.content {position: relative;}
+div.content-block {position: relative;}
+p.u-rigister {display: block;float: right;color: red;}
+div.login-way {clear: both;margin-top: 50px;}
+.u-btn-login {width: 30px;height: 30px;border-radius: 50%;}
+.loginwaytit {padding-bottom: 40px;height: 30px;line-height: 30px;}
+.u-btn-login {width: 30px;height: 30px;border-radius: 50%;}
+
+/*商品分类页面样式*/
+span {font-size: 0.75rem;}
+.u-title { background-color:#FE5200;}
+.tit-text {color: white;font-weight: bold;}
+.class-type-class {width: 40px;height: 80px;}
+.class-type-class img {width: 40px;height: 40px;}
+.class-type-class span {display: block;font-size: 0.75rem;}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>电商</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="shortcut icon" href="assets/img/favicon.ico">
+		
+		<!--SUI CSS-->
+		<link rel="stylesheet" href="assets/js/sui/sm.css">
+		<link rel="stylesheet" href="assets/js/sui/sm-extend.css">
+		<!--OM CSS-->
+		<link rel="stylesheet" href="assets/css/common.css">
+		<!--JS zepto,SUI全局配置config,百度地图API-->
+		<script type='text/javascript' src='assets/js/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/config.js' charset='utf-8'></script>
+	</head>
+	<body>
+		<div class="page">
+			<header class="bar bar-nav">
+				<a class="icon icon-left pull-left" href="home.html"></a>
+  				<a class="icon icon-cart pull-right"></a>
+				<h1 id="title" class="title">登录</h1>
+			</header>
+			<div class="content">
+				
+				<div class="list-block">
+    				<ul>
+      				<!-- Text inputs -->
+      					<li>
+        					<div class="item-content">
+          						<div class="item-media"><i class="icon icon-form-name"></i></div>
+          						<div class="item-inner">
+            						<div class="item-title label">账号</div>
+            						<div class="item-input">
+              							<input type="text" placeholder="手机号/邮箱/昵称">
+            						</div>
+          						</div>
+        					</div>
+      					</li>
+      					<li>
+        					<div class="item-content">
+          						<div class="item-media"><i class="icon icon-form-password"></i></div>
+          						<div class="item-inner">
+            						<div class="item-title label">密码</div>
+            						<div class="item-input">
+              							<input type="password" placeholder="输入密码" class="">
+            						</div>
+          						</div>
+        					</div>
+      					</li>
+    				</ul>
+  				</div>
+  				<div class="content-block">
+    				<div class="row">
+      					<div class="col-100"><a href="#" class="button button-big button-fill button-success">提交</a></div>
+    				</div>
+    				<p class="u-rigister">注册账号</p>
+  				</div>
+  				
+  				<div class="content-block login-way">
+  					<div class="content-block-title text-center loginwaytit" style="padding-bottom: 40px;height: 30px;line-height: 30px;">其它登录方式</div>
+  					<div class="row no-gutter">
+  						<div class="col-33 text-center">
+  							<img src="assets/img/city.jpg" class="u-btn-login"/>
+	  					</div>
+	  					<div class="col-33 text-center">
+	  						<img src="assets/img/city.jpg" class="u-btn-login"/>
+	  					</div>
+	  					<div class="col-33 text-center">
+	  						<img src="assets/img/city.jpg" class="u-btn-login"/>
+	  					</div>
+  					</div>
+  				</div>
+			</div>
+			
+		</div>
+		
+		
+		<!--** SUI JS **-->
+		<script type='text/javascript' src='assets/js/sui/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/sui/sm-extend.min.js' charset='utf-8'></script>
+		<!-- 各个页面自身的JS -->
+		<script type='text/javascript' src='assets/js/goodsLists.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/goodsDetails.js' charset='utf-8'></script>
+		<!-- 最后加载sharebike，调用$.init() -->
+		<script type='text/javascript' src='assets/js/common.js' charset='utf-8'></script>    
+	</body>
+</html>

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/OnlineMall/!svn/ver/1149/code/server/om/src/com/util
+END
+WeiXinUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/OnlineMall/!svn/ver/1038/code/server/om/src/com/util/WeiXinUtil.java
+END
+Validator.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/OnlineMall/!svn/ver/1149/code/server/om/src/com/util/Validator.java
+END
+CommonInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/OnlineMall/!svn/ver/899/code/server/om/src/com/util/CommonInterceptor.java
+END
+MMUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/OnlineMall/!svn/ver/1119/code/server/om/src/com/util/MMUtil.java
+END
+AjaxMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/OnlineMall/!svn/ver/1014/code/server/om/src/com/util/AjaxMessage.java
+END
+GlobalDataUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/OnlineMall/!svn/ver/1122/code/server/om/src/com/util/GlobalDataUtil.java
+END
+MM.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/OnlineMall/!svn/ver/454/code/server/om/src/com/util/MM.java
+END
+WeixinFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/OnlineMall/!svn/ver/1044/code/server/om/src/com/util/WeixinFilter.java
+END
+SysUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/OnlineMall/!svn/ver/1022/code/server/om/src/com/util/SysUtil.java
+END
+TomcatMemListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/OnlineMall/!svn/ver/608/code/server/om/src/com/util/TomcatMemListener.java
+END
+HttpUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/OnlineMall/!svn/ver/1038/code/server/om/src/com/util/HttpUtil.java
+END
+CommonFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/OnlineMall/!svn/ver/1122/code/server/om/src/com/util/CommonFilter.java
+END
+CommonListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/OnlineMall/!svn/ver/867/code/server/om/src/com/util/CommonListener.java
+END

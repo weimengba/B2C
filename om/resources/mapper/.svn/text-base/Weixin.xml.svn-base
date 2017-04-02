@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pub.dao.WeixinDAO">
+
+
+
+	<select id="selectUserByOpenid" parameterType="map" resultType="map">
+		select 
+			c.id,
+			c.account,
+			c.password,
+			c.mobile,
+			c.email,
+			c.nickname,
+			c.sex,
+			c.headimg,
+			c.ctime,
+			c.utime
+		from om_customer c left join om_customer_sns s on c.id = s.customer_id
+		where s.sns_id=#{openid}
+	</select>
+
+	<insert id="addWeixinUser" parameterType="map" useGeneratedKeys="true" keyProperty="id">
+		insert into om_customer(
+		    <if test="account != null and account !=''">	
+			account,
+			</if>
+			<if test="password != null and password !=''">
+			password,
+			</if>
+			<if test="mobile != null and mobile !=''">
+			mobile,
+			</if>
+			<if test="email != null and email !=''">
+			email,
+			</if>
+			<if test="nickname != null and nickname !=''">
+			nickname,
+			</if>
+			<if test="headimg != null and headimg !=''">
+			headimg,
+			</if>
+			<if test="sex != null and sex !=''">
+			sex,
+			</if>
+			ctime,
+			type
+		)values(
+		    <if test="account != null and account !=''">
+			#{account},
+			</if>
+			<if test="password != null and password !=''">
+			#{password},
+			</if>
+			<if test="mobile != null and mobile !=''">
+			#{mobile},
+			</if>
+			<if test="email != null and email !=''">
+			#{email},
+			</if>
+			<if test="nickname != null and nickname !=''">
+			#{nickname},
+			</if>
+			<if test="headimg != null and headimg !=''">
+			#{headimg},
+			</if>
+			<if test="sex != null and sex !=''">
+			#{sex},
+			</if>
+			now(),
+			1
+		)	
+	</insert>
+
+	<insert id="addWeixinUserSns" parameterType="map">
+		insert into om_customer_sns(
+		    <if test="customerId != null and customerId !=''">	
+			customer_id,
+			</if>
+			<if test="snsId != null and snsId !=''">
+			sns_id,
+			</if>
+			<if test="snsType != null and snsType !=''">
+			sns_type,
+			</if>
+			<if test="snsInfo != null and snsInfo !=''">
+			sns_info,
+			</if>
+			ctime
+		)values(
+		    <if test="customerId != null and customerId !=''">	
+			#{customerId},
+			</if>
+			<if test="snsId != null and snsId !=''">
+			#{snsId},
+			</if>
+			<if test="snsType != null and snsType !=''">
+			#{snsType},
+			</if>
+			<if test="snsInfo != null and snsInfo !=''">
+			#{snsInfo},
+			</if>
+			now()
+		)	
+	</insert>
+	
+
+</mapper>

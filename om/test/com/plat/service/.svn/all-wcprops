@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/OnlineMall/!svn/ver/713/code/server/om/test/com/plat/service
+END
+CustomerServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/OnlineMall/!svn/ver/275/code/server/om/test/com/plat/service/CustomerServiceTest.java
+END
+CommonServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/OnlineMall/!svn/ver/713/code/server/om/test/com/plat/service/CommonServiceTest.java
+END
+PlatOrderPaymentServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/OnlineMall/!svn/ver/304/code/server/om/test/com/plat/service/PlatOrderPaymentServiceTest.java
+END

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.PlatOrderPaymentDAO">
+	<!--定义插入到订单支付状态表数据的sql -->
+	<insert id="insertPlatOrderPayment" parameterType="map">
+			insert into om_order_payment (
+			order_id,
+			pay_way,
+			payer,
+			pay_time,
+			pay_status,
+			pay_sum,
+			pay_amount,
+			pay_actual,
+			ctime,
+			pay_refund			
+			)
+			values (
+			#{orderId},
+			#{payWay},
+			#{payer},
+			now(),
+			#{payStatus},
+			#{paySum},
+			#{payAmount},
+			#{payActual},
+				now(),
+			#{payRefund}	
+			)
+	</insert>
+	<!--定义查询所有订单支付状态表数据的sql -->
+	<select id="selectPlatOrderPayment" resultType="map">
+			SELECT
+			id              as  id,
+			pay_way         as  payWay,
+			payer           as  payer,
+			order_id		as	orderId,
+			pay_time        as  payTime ,
+			pay_status      as  payStatus,
+			pay_sum         as  paySum,
+			pay_amount      as  payAmount,
+			pay_actual      as  payActual,
+			pay_refund      as  payRefund
+			FROM order_payment_v
+			<where>
+			<if test="payer != null and payer !='' ">
+				and payer like concat('%',#{payer},'%')
+			</if>
+			 <if test="payWay==1||payWay==2">
+				and pay_way =#{payWay}
+			</if>
+			<if test="payStatus==1||payStatus==2||payStatus==3||payStatus==4">
+				and pay_status =#{payStatus}
+			</if>
+				<if test="payTime != null and payTime !='' ">
+				and date_format(pay_time,'%Y-%m-%d')=date_format(#{payTime},'%Y-%m-%d') 
+			</if>
+		</where>
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}	
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>		
+		</if>
+		
+	</select>
+
+	<!--平台修改用户订单支付状态表-->
+	<update id="updatePlatOrderPayment" parameterType="map">
+	      		update om_order_payment set 
+			<if test="payStatus != null and payStatus !='' ">
+				pay_status =#{payStatus}    ,
+			</if>
+			<if test="payer != null and payer !='' ">
+				payer =#{payer}    ,
+			</if>
+			<if test="paySum != null and paySum !='' ">
+				pay_sum =#{paySum}   ,
+			</if>
+			<if test="payAmount != null and payAmount !='' ">
+				pay_amount =#{payAmount}    ,
+			</if> 
+			<if test="payActual != null and payActual !='' ">
+				pay_actual =#{payActual}    ,
+			</if> 
+			<if test="payRefund != null and payRefund !='' ">
+				pay_refund =#{payRefund}    ,
+			</if> 		
+			<if test="payWay != null and payWay !='' ">
+				pay_way = #{payWay}   ,
+			</if>
+			id = id 
+		where id = #{id}
+	</update>
+
+
+
+</mapper>

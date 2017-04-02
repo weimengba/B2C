@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/OnlineMall/!svn/ver/1161/code/server/om/src/com/pub/controller
+END
+PubGoodsAttrController.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/OnlineMall/!svn/ver/850/code/server/om/src/com/pub/controller/PubGoodsAttrController.java
+END
+PubOrdePaymentController.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/OnlineMall/!svn/ver/1015/code/server/om/src/com/pub/controller/PubOrdePaymentController.java
+END
+PubGoodsCategoryController.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/OnlineMall/!svn/ver/1005/code/server/om/src/com/pub/controller/PubGoodsCategoryController.java
+END
+BasePubController.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/OnlineMall/!svn/ver/1058/code/server/om/src/com/pub/controller/BasePubController.java
+END
+PubGoodsController.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/1161/code/server/om/src/com/pub/controller/PubGoodsController.java
+END
+PubOrderController.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/1090/code/server/om/src/com/pub/controller/PubOrderController.java
+END
+PubCustomerCartController.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/OnlineMall/!svn/ver/892/code/server/om/src/com/pub/controller/PubCustomerCartController.java
+END
+WeixinController.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/OnlineMall/!svn/ver/971/code/server/om/src/com/pub/controller/WeixinController.java
+END
+DemoController.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/OnlineMall/!svn/ver/1050/code/server/om/src/com/pub/controller/DemoController.java
+END
+PubGoodsCommentController.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/OnlineMall/!svn/ver/1128/code/server/om/src/com/pub/controller/PubGoodsCommentController.java
+END
+PubCustomerController.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/OnlineMall/!svn/ver/1144/code/server/om/src/com/pub/controller/PubCustomerController.java
+END

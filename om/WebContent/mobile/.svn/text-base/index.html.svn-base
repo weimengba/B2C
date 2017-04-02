@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>电商</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="shortcut icon" href="/favicon.ico">
+
+		<!--SUI CSS-->
+		<link rel="stylesheet" href="assets/js/sui/sm.css">
+		<link rel="stylesheet" href="assets/js/sui/sm-extend.css">
+		<!--OM CSS-->
+		<link rel="stylesheet" href="assets/css/common.css">
+		<!--JS zepto,SUI全局配置config,百度地图API-->
+		<script type='text/javascript' src='assets/js/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/config.js' charset='utf-8'></script>
+
+	</head>
+
+	<body>
+		<div class="page-group">
+
+			<div class="page page-current" id='index'>
+				<header class="bar bar-nav">
+					<h1 class='title'>路由</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						<ul>
+							<li>
+								<a href="home.html">在线商城首页</a>
+							</li>
+							<li>
+								<a href="category.html">商品分类页</a>
+							</li>
+							<li>
+								<a href="search.html">商品查询页</a>
+							</li>
+							<li>
+								<a href="goods.html">商品详情页</a>
+							</li>
+							<li>
+								<a href="login.html">用户登录</a>
+							</li>
+							<li>
+								<a href="register.html">用户注册</a>
+							</li>
+							<li>
+								<a href="center.html">个人中心</a>
+							</li>
+							<li>
+								<a href="order.html">订单列表</a>
+							</li>
+							<li>
+								<a href="customercart.html">购物车</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!--** SUI JS **-->
+		<script type='text/javascript' src='assets/js/sui/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/sui/sm-extend.min.js' charset='utf-8'></script>
+		<!-- 各个页面自身的JS -->
+
+		<script type='text/javascript' src='assets/js/goods.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/center.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/login.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/goodsLists.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/goodsDetails.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/category.js' charset='utf-8'></script>
+
+		<!-- 最后加载sharebike，调用$.init() -->
+		<script type='text/javascript' src='assets/js/common.js' charset='utf-8'></script>
+	</body>
+
+</html>

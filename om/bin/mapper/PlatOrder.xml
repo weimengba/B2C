@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.PlatOrderDAO">
+
+	<select id="selectOrder" resultType="map">
+		select 
+			id					as		id,
+			customer_id			as		customerId,
+			total_price			as		totalPrice,
+			pay					as		pay,
+			state				as		state,
+			customer_address_id	as		customerAddressId,
+			remark				as		remark,
+			ctime				as		ctime
+		from order_v
+		<where>
+			<if test="id != null and id != '' ">
+				and id like concat('%',#{id},'%')
+			</if>
+			<if test="customerId != null and customerId != '' ">
+				and customer_id like concat('%',#{customerId},'%')
+			</if>
+			<if test="state != null and state != '' ">
+				and state like concat('%',#{state},'%')
+			</if>
+		</where>
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+	</select>
+
+	<!-- 添加订单 -->
+	<insert id="insertOrder" parameterType="map">
+		insert into om_order 
+		(
+			customer_id			,
+			total_price			,
+			pay					,
+			state				,
+			customer_address_id	,
+			remark				,
+			ctime
+		)
+		values
+		(
+			#{customerId}		,
+			#{totalPrice}		,
+			#{pay}				,
+			#{state}			,
+			#{customerAddressId},
+			#{remark}			,
+			now()
+		)
+	</insert>
+
+	<!-- 根据订单号修改订单 -->
+	<update id="updateOrderById" parameterType="map">
+		update om_order 
+		set
+			<if test="customerId != null and customerId != '' ">
+				customer_id			=		#{customerId}			,
+			</if>
+			<if test="totalPrice != null and totalPrice != '' ">
+				total_price			=		#{totalPrice}			,
+			</if>
+			<if test="pay != null and pay != '' ">
+				pay					=		#{pay}					,
+			</if>
+			<if test="state != null and state != '' ">
+				state				=		#{state}				,
+			</if>
+			<if test="customerAddressId != null and customerAddressId != '' ">
+				customer_address_id	=		#{customerAddressId}	,
+			</if>
+			<if test="remark != null and remark != '' ">
+				remark				=		#{remark}				,
+			</if>
+				id					=		id
+		where 
+				id					= 		#{id}
+	</update>
+
+</mapper>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.PlatReportDAO">
+
+	<select id="selectSalesRank" resultType="map">
+		
+		select  
+			(@seq:=@seq+1)			as		seq				,
+			rank.*
+		from 
+		       (select
+					title			as		goodsName		,
+					goods_id		as		goodsId			,
+					sum(goods_num)	as		saleQuantity	,
+					sum(goods_price*goods_num) as sales		,
+					goods_price 	as		averagePrice 
+				from 
+					report_sales_rank
+					<where>
+						<choose>
+							<when test="startTime != null and startTime != '' and endTime != null and endTime != '' ">
+								and utime BETWEEN	#{startTime} and #{endTime}
+							</when>
+							<when test="startTime != null and startTime != '' ">
+								and utime BETWEEN	#{startTime} and now()
+							</when>
+							<when test="endTime != null and endTime != '' ">
+								and utime 	&lt; 	#{endTime}
+							</when>
+						</choose>
+					</where>
+				group by goodsId
+					<if test="commonOrder != null and commonOrder !='' ">
+						order by ${commonOrder}
+						<if test="commonDesc != null and commonDesc !='' ">
+							desc
+						</if>
+					</if>) rank,
+		
+				(select @seq:=0) b
+	</select>
+</mapper>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/OnlineMall/!svn/ver/648/code/server/om/WebContent/WEB-INF/jsp/plat/order
+END
+fetchOrder.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/OnlineMall/!svn/ver/573/code/server/om/WebContent/WEB-INF/jsp/plat/order/fetchOrder.jsp
+END
+orderItemList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/OnlineMall/!svn/ver/648/code/server/om/WebContent/WEB-INF/jsp/plat/order/orderItemList.jsp
+END
+orderList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/OnlineMall/!svn/ver/484/code/server/om/WebContent/WEB-INF/jsp/plat/order/orderList.jsp
+END

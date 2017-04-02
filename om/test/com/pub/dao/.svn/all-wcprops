@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/OnlineMall/!svn/ver/1161/code/server/om/test/com/pub/dao
+END
+PubGoodsTypeAttrValueDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/OnlineMall/!svn/ver/279/code/server/om/test/com/pub/dao/PubGoodsTypeAttrValueDAOTest.java
+END
+PubGoodsTypeAttrDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/279/code/server/om/test/com/pub/dao/PubGoodsTypeAttrDAOTest.java
+END
+PubGoodsCategoryDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/279/code/server/om/test/com/pub/dao/PubGoodsCategoryDAOTest.java
+END
+TestPubOrderPaymentDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/1015/code/server/om/test/com/pub/dao/TestPubOrderPaymentDAO.java
+END
+PubGoodsDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/OnlineMall/!svn/ver/1161/code/server/om/test/com/pub/dao/PubGoodsDAOTest.java
+END
+DemoDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/OnlineMall/!svn/ver/890/code/server/om/test/com/pub/dao/DemoDAOTest.java
+END
+PubGoodsTypeDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/OnlineMall/!svn/ver/211/code/server/om/test/com/pub/dao/PubGoodsTypeDAOTest.java
+END
+PubGoodsCommentDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/1128/code/server/om/test/com/pub/dao/PubGoodsCommentDAOTest.java
+END
+AllDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/OnlineMall/!svn/ver/610/code/server/om/test/com/pub/dao/AllDAOTest.java
+END
+PubCustomerDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/OnlineMall/!svn/ver/842/code/server/om/test/com/pub/dao/PubCustomerDAOTest.java
+END

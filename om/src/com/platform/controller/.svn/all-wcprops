@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/OnlineMall/!svn/ver/1131/code/server/om/src/com/platform/controller
+END
+BasePlatController.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/OnlineMall/!svn/ver/938/code/server/om/src/com/platform/controller/BasePlatController.java
+END
+PlatOrderController.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/OnlineMall/!svn/ver/672/code/server/om/src/com/platform/controller/PlatOrderController.java
+END
+PlatReportController.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/OnlineMall/!svn/ver/721/code/server/om/src/com/platform/controller/PlatReportController.java
+END
+GoodsCommentController.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/OnlineMall/!svn/ver/584/code/server/om/src/com/platform/controller/GoodsCommentController.java
+END
+GoodsAttrValueController.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/OnlineMall/!svn/ver/1001/code/server/om/src/com/platform/controller/GoodsAttrValueController.java
+END
+GoodsAttrController.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/OnlineMall/!svn/ver/795/code/server/om/src/com/platform/controller/GoodsAttrController.java
+END
+GoodsCategoryController.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/OnlineMall/!svn/ver/810/code/server/om/src/com/platform/controller/GoodsCategoryController.java
+END
+GoodsController.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/OnlineMall/!svn/ver/820/code/server/om/src/com/platform/controller/GoodsController.java
+END
+GoodsTypeController.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/OnlineMall/!svn/ver/652/code/server/om/src/com/platform/controller/GoodsTypeController.java
+END
+PlatOrderHistoryController.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/OnlineMall/!svn/ver/678/code/server/om/src/com/platform/controller/PlatOrderHistoryController.java
+END
+SysController.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/OnlineMall/!svn/ver/603/code/server/om/src/com/platform/controller/SysController.java
+END
+PlatSysRoleController.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/OnlineMall/!svn/ver/1117/code/server/om/src/com/platform/controller/PlatSysRoleController.java
+END
+PlatCustomerController.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/OnlineMall/!svn/ver/505/code/server/om/src/com/platform/controller/PlatCustomerController.java
+END
+CommonController.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/OnlineMall/!svn/ver/804/code/server/om/src/com/platform/controller/CommonController.java
+END
+XXSysManagerController.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/OnlineMall/!svn/ver/362/code/server/om/src/com/platform/controller/XXSysManagerController.java
+END
+PlatSysMangerController.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/OnlineMall/!svn/ver/1131/code/server/om/src/com/platform/controller/PlatSysMangerController.java
+END
+PlatOrderPaymentController.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/OnlineMall/!svn/ver/537/code/server/om/src/com/platform/controller/PlatOrderPaymentController.java
+END
+PlatSysPermissionRoleController.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/OnlineMall/!svn/ver/966/code/server/om/src/com/platform/controller/PlatSysPermissionRoleController.java
+END

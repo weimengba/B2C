@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>电商</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+
+<!--SUI CSS-->
+<link rel="stylesheet" href="assets/js/sui/sm.css">
+<link rel="stylesheet" href="assets/js/sui/sm-extend.css">
+<!--OM CSS-->
+<link rel="stylesheet" href="assets/css/common.css">
+<!--JS zepto,SUI全局配置config,百度地图API-->
+<script type='text/javascript' src='assets/js/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='assets/js/config.js' charset='utf-8'></script>
+</head>
+
+	<body >
+		<div class="page-group">
+
+			<div class="page page-current" id="om-customer-address">
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back">
+						<span class="icon icon-left"></span> 修改地址
+					</a>
+				</header>
+				<div class="content" id="om-customer-address-list" style="height: 82%;"> 
+					<div class="card" id="address-list-card">
+						<div class="card-content" id="address-content">
+							
+						</div>
+					</div>
+					
+				</div>
+				<nav class="bottom-bar">
+				<div class="row">
+				    <div class="col-100"><a href="customerAddress.html" class="button button-big button-fill button-danger">添加收货地址</a></div>
+				</div>
+				</nav>
+			</div>
+
+		<!--** SUI JS **-->
+		<script type='text/javascript' src='assets/js/sui/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/sui/sm-extend.min.js' charset='utf-8'></script>
+		<!-- 各个页面自身的JS -->
+		<script type='text/javascript' src='assets/js/customerAddress.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/customerAddressList.js' charset='utf-8'></script>
+		<!-- 最后加载sharebike，调用$.init() -->
+		<script type='text/javascript' src='assets/js/common.js' charset='utf-8'></script>
+	</body>
+
+</html>

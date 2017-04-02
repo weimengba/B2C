@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>电商</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="shortcut icon" href="assets/img/favicon.ico">
+		
+		<!--SUI CSS-->
+		<link rel="stylesheet" href="assets/js/sui/sm.css">
+		<link rel="stylesheet" href="assets/js/sui/sm-extend.css">
+		<!--OM CSS-->
+		<link rel="stylesheet" href="assets/css/common.css">
+		<!--JS zepto,SUI全局配置config,百度地图API-->
+		<script type='text/javascript' src='assets/js/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/config.js' charset='utf-8'></script>		
+	</head>
+	<body>
+		<div class="page" id="om-goodsdetails">
+		   	<a class="btn back" href="">
+		   		<span class="icon icon-left pull-left text-center top-nav nav-left"></span>
+		   	</a>
+		    <span class="icon icon-menu pull-right text-center top-nav nav-right"></span>			  	
+			<div class="content details-content">
+				<div class="row no-gutter">
+					<img class="u-goods-img" src="assets/img/city.jpg"/>
+					<div class="row">
+						<div class="col-80">
+							<p class="u-details-title">男士休闲包男款帆布单肩包男包学院邮差包包原创横款日韩潮斜挎包......</p>
+						</div>
+						<div class="col-20 text-center">
+							 <span class="icon icon-share"></span>
+							 <span style="display: block;">分享</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-80">
+							<p class="u-price"><span class="u-market-price">200</span>&nbsp;<span class="u-om-price">￥100</span></p>
+						</div>
+						<div class="col-20">
+							<p><span>已销2200笔</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="buttons-tab fixed-tab" data-offset="44">
+			        <a href="#tab1" class="tab-link active button">详情</a>
+			        <a href="#tab2" class="tab-link button">评价</a>
+			        <a href="#tab3" class="tab-link button">属性</a>
+			    </div>
+			    <div class="content-block">
+			    	<div class="tabs">
+				        <div id="tab1" class="tab active">
+					        <div class="content-block">
+					          	<p >宝贝详情</p>
+					          	<div class="card-content">
+					          		
+					          		<div class="row no-gutter details-high">
+										<div class="col-50">
+											<span>品名：</span>
+											<span>红葡萄酒</span>
+										</div>							
+									</div>
+									<div class="row no-gutter details-high">
+										<div class="col-100">
+											<span>简介：</span>
+											<span>红葡萄酒红葡萄酒红葡萄酒红葡萄酒红葡萄酒红葡萄酒</span>
+										</div>
+									</div>
+									<div class="row no-gutter details-high">
+										<div class="col-100">
+											<span>详情：</span>
+											<span>红葡萄酒红葡萄酒红葡萄酒红葡萄酒红葡萄酒红葡萄酒红葡萄酒</span>
+										</div>
+									</div>
+									
+					          	</div>
+					        </div>
+				       </div>
+				        <div id="tab2" class="tab">
+					        <div class="content-block">
+					          	<p >宝贝评价</p>
+					          	<div class="card">
+						            <div class="card-header">
+						            	<p><img src="assets/img/city.jpg" style="width: 20px;height: 20px;border-radius: 50%;" /><span style="display: inline-block;text-indent: 1rem;">hello</span></p>
+						            	
+						            </div>
+						            <div class="card-content">
+						                <div class="card-content-inner">
+						                	<span>2017-02-28</span>
+						                    <p>质量确实不错，比市场上卖的便宜不少，而且质量还很好，有包邮，不错，不错</p>
+						                </div>
+						            </div>
+						        </div>
+						        <div class="card">
+						            <div class="card-header">
+						            	<p><img src="assets/img/city.jpg" style="width: 20px;height: 20px;border-radius: 50%;" /><span style="display: inline-block;text-indent: 1rem;">hello</span></p>
+						            	
+						            </div>
+						            <div class="card-content">
+						                <div class="card-content-inner">
+						                	<span>2017-02-28</span>
+						                    <p>质量确实不错，比市场上卖的便宜不少，而且质量还很好，有包邮，不错，不错</p>
+						                </div>
+						            </div>
+						        </div>
+						        <div class="card">
+						            <div class="card-header">
+						            	<p><img src="assets/img/city.jpg" style="width: 20px;height: 20px;border-radius: 50%;" /><span style="display: inline-block;text-indent: 1rem;">hello</span></p>
+						            	
+						            </div>
+						            <div class="card-content">
+						                <div class="card-content-inner">
+						                	<span>2017-02-28</span>
+						                    <p>质量确实不错，比市场上卖的便宜不少，而且质量还很好，有包邮，不错，不错</p>
+						                </div>
+						            </div>
+						        </div>
+					        </div>
+				       </div>
+	      				<div id="tab3" class="tab">
+					        <div class="content-block">
+					          	<p >商品属性</p>
+					        </div>
+				       </div>      				
+	    			</div>
+			    </div>
+			</div>
+			
+			<!--底部导航-->
+			<nav class="bar bar-tab">
+			    <a class="tab-item external active" href="#tab-home">
+			        <span class="icon icon-home"></span>
+			        <span class="tab-label">首页</span>
+			    </a>
+			    <a class="tab-item external" href="class.html">
+			        <span class="icon icon-message"></span>
+			        <span class="tab-label">客服</span>
+			    </a>
+			    <a class="tab-item external" href="#tab-cart">
+			        <span class="icon icon-cart"></span>
+			        <span class="tab-label">购物车</span>
+			    </a>
+			    <a class="tab-item external" href="#tab-my">
+			        <span class="icon icon-check"></span>
+			        <span class="tab-label">购买</span>
+			    </a>
+			</nav>	
+			<!--底部导航结束-->
+		</div>
+		
+		<!--** SUI JS **-->
+		<script type='text/javascript' src='assets/js/sui/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/sui/sm-extend.min.js' charset='utf-8'></script>
+		<!-- 各个页面自身的JS -->
+		<script type='text/javascript' src='assets/js/goodsLists.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/goodsDetails.js' charset='utf-8'></script>
+		<script type='text/javascript' src='assets/js/category.js' charset='utf-8'></script>
+		<!-- 最后加载sharebike，调用$.init() -->
+		<script type='text/javascript' src='assets/js/common.js' charset='utf-8'></script>
+	</body>
+</html>

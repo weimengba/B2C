@@ -1,0 +1,29 @@
+.list-block .item-content{
+	height: 1.8rem;
+	min-height: 1.8rem;
+}
+.list-block.media-list .item-inner-right{
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.45rem;
+    -webkit-align-self: stretch;
+    align-self: stretch;
+    text-align: right;
+    padding-right: 1rem;
+}
+.list-block{
+    margin: 2.75rem 0;
+    font-size: 0.75rem;
+}
+.list-block .item-title.checkbox{
+	width: 100%;
+    -webkit-flex-shrink: 0;
+    -ms-flex: 0 0 auto;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    margin: 4px 0;
+}
+.list-block .item-title.label{
+	width: 40%;
+}
+

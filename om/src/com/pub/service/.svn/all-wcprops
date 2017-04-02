@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/OnlineMall/!svn/ver/1161/code/server/om/src/com/pub/service
+END
+PubGoodsTypeAttrService.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/OnlineMall/!svn/ver/846/code/server/om/src/com/pub/service/PubGoodsTypeAttrService.java
+END
+PubGoodsCategoryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/OnlineMall/!svn/ver/831/code/server/om/src/com/pub/service/PubGoodsCategoryService.java
+END
+PubOrderPaymentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/OnlineMall/!svn/ver/1015/code/server/om/src/com/pub/service/PubOrderPaymentService.java
+END
+BasePubService.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/OnlineMall/!svn/ver/1044/code/server/om/src/com/pub/service/BasePubService.java
+END
+PubCustomerServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/OnlineMall/!svn/ver/960/code/server/om/src/com/pub/service/PubCustomerServiceI.java
+END
+PubGoodsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/OnlineMall/!svn/ver/1161/code/server/om/src/com/pub/service/PubGoodsService.java
+END
+PubOrderService.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/OnlineMall/!svn/ver/1153/code/server/om/src/com/pub/service/PubOrderService.java
+END
+DemoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/OnlineMall/!svn/ver/347/code/server/om/src/com/pub/service/DemoService.java
+END
+PubOrderViewServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/767/code/server/om/src/com/pub/service/PubOrderViewServiceI.java
+END
+PubGoodsTypeAttrServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/OnlineMall/!svn/ver/846/code/server/om/src/com/pub/service/PubGoodsTypeAttrServiceI.java
+END
+PubGoodsCategoryServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/OnlineMall/!svn/ver/831/code/server/om/src/com/pub/service/PubGoodsCategoryServiceI.java
+END
+PubOrderPaymentServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/OnlineMall/!svn/ver/1015/code/server/om/src/com/pub/service/PubOrderPaymentServiceI.java
+END
+PubGoodsServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/OnlineMall/!svn/ver/1161/code/server/om/src/com/pub/service/PubGoodsServiceI.java
+END
+PubOrderServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/OnlineMall/!svn/ver/1087/code/server/om/src/com/pub/service/PubOrderServiceI.java
+END
+DemoServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/OnlineMall/!svn/ver/313/code/server/om/src/com/pub/service/DemoServiceI.java
+END
+PubCommonService.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/OnlineMall/!svn/ver/610/code/server/om/src/com/pub/service/PubCommonService.java
+END
+PubOrderItemService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/OnlineMall/!svn/ver/895/code/server/om/src/com/pub/service/PubOrderItemService.java
+END
+WeixinService.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/OnlineMall/!svn/ver/1131/code/server/om/src/com/pub/service/WeixinService.java
+END
+PubCustomerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/OnlineMall/!svn/ver/1070/code/server/om/src/com/pub/service/PubCustomerService.java
+END
+PubCommonServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/OnlineMall/!svn/ver/610/code/server/om/src/com/pub/service/PubCommonServiceI.java
+END
+PubOrderItemServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/OnlineMall/!svn/ver/893/code/server/om/src/com/pub/service/PubOrderItemServiceI.java
+END
+WeixinServiceI.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/OnlineMall/!svn/ver/1044/code/server/om/src/com/pub/service/WeixinServiceI.java
+END
+PubOrderViewService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/OnlineMall/!svn/ver/767/code/server/om/src/com/pub/service/PubOrderViewService.java
+END

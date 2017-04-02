@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans    
+                        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd    
+                        http://www.springframework.org/schema/context    
+                        http://www.springframework.org/schema/context/spring-context-4.0.xsd    
+           				http://www.springframework.org/schema/tx  
+           				http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+	<!-- 注解方式自动搜索Service -->
+	<context:component-scan base-package="com.platform.service,com.pub.service" />
+	<!-- 注解方式自动搜索Dao -->
+	<context:component-scan base-package="com.platform.dao,com.pub.dao" />
+	<!-- 配置数据源 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url"
+			value="jdbc:mysql://192.168.0.200:3306/om?useUnicode=true&amp;characterEncoding=utf8" />
+		<property name="username" value="root" />
+		<property name="password" value="123456" />
+	</bean>
+
+	<!-- 配置SqlSessionFactory对象 -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<!-- 注入数据库连接池 -->
+		<property name="dataSource" ref="dataSource" />
+		<!-- 配置MyBatis全局配置文件:mybatis-config.xml -->
+		<property name="configLocation" value="classpath:conf/mybatis-config.xml" />
+		<!-- 扫描entity包 使用别名 -->
+		<property name="typeAliasesPackage" value="com.pojo" />
+		<!-- 扫描sql配置文件:mapper需要的xml文件 -->
+		<property name="mapperLocations" value="classpath*:mapper/*.xml" />
+	</bean>
+
+	<!-- 配置Spring使用Mybatis -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<!-- 注入sqlSessionFactory -->
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+		<!-- 给出需要扫描Dao接口包 -->
+		<property name="basePackage" value="com.platform.dao,com.pub.dao" />
+	</bean>
+
+	<!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+
+
+	<bean id="GlobalDataUtil" class="com.util.GlobalDataUtil"
+		init-method="init"></bean>
+
+
+	<!-- Redis配置 -->
+
+	<!-- Redis 单点配置 -->
+	<bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<property name="maxIdle" value="2000" />
+		<property name="maxTotal" value="20000" />
+		<property name="minEvictableIdleTimeMillis" value="300000"></property>
+		<property name="numTestsPerEvictionRun" value="3"></property>
+		<property name="timeBetweenEvictionRunsMillis" value="60000"></property>
+		<property name="maxWaitMillis" value="20000" />
+		<property name="testOnBorrow" value="false" />
+	</bean>
+	<bean id="connectionFactory"
+		class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
+		p:host-name="127.0.0.1" p:port="6379" p:password="" p:pool-config-ref="poolConfig" />
+	<bean id="redisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
+		<property name="connectionFactory" ref="connectionFactory" />
+	</bean>
+
+
+
+
+
+	<!-- 任务计划 -->
+
+
+
+
+	<!-- 吃 任务 -->
+
+	<bean id="EatJob" class="com.jobs.EatJob"></bean>
+	<bean id="EatJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="EatJob"></property>
+		<property name="targetMethod" value="eat"></property>
+		<property name="concurrent" value="true"></property>
+	</bean>
+	<bean id="EatJobTrigger"
+		class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+		<property name="jobDetail" ref="EatJobDetail" />
+		<property name="startDelay" value="1000" />
+		<property name="repeatInterval" value="1000" />
+	</bean>
+
+
+
+	<!-- 睡 任务 -->
+
+
+	<bean id="SleepJob" class="com.jobs.SleepJob"></bean>
+	<bean id="SleepJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="SleepJob"></property>
+		<property name="targetMethod" value="sleep"></property>
+		<property name="concurrent" value="true"></property>
+	</bean>
+	<bean id="SleepJobTrigger"
+		class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+		<property name="jobDetail" ref="SleepJobDetail" />
+		<property name="startDelay" value="1000" />
+		<property name="repeatInterval" value="3000" />
+	</bean>
+
+
+
+	<!-- 吃 睡 的任务计划 -->
+
+	<bean name="quartzScheduler"
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<!-- 开发阶段关闭定时任务 -->
+				<!-- <ref bean="EatJobTrigger" /> <ref bean="SleepJobTrigger" /> -->
+			</list>
+		</property>
+	</bean>
+
+
+
+
+
+
+
+
+</beans>

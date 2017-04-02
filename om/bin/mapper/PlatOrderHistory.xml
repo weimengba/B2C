@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.PlatOrderHistoryDAO">
+
+	<!--定义插入到历史订单表数据的sql -->
+	<insert id="insertPlatOrderHistory" parameterType="map">
+			insert into om_order_history (
+			order_id,
+			manager_id,
+			order_status, 
+			ctime,
+			message		
+			)
+			values (
+			#{orderId},
+			#{managerId},
+			#{orderStatus},
+			now(),
+			#{message} 	
+			)
+	</insert>
+	<!--定义查询所有历史订单表数据的sql -->
+	<select id="selectPlatOrderHistory" resultType="map">
+			SELECT
+			id,
+			order_id         as orderId,
+			manager_id       as managerId,
+			order_status     as orderStatus, 
+			ctime            as ctime,
+			message	         as message
+			FROM order_history_v
+			<where>
+			<if test="orderId != null and orderId !='' ">
+				and order_id =#{orderId}
+			</if>
+			 <if test="orderStatus==0||orderStatus==1||orderStatus==2||orderStatus==3||orderStatus==4">
+				and order_status =#{orderStatus}
+			</if>
+			<if test="ctime != null and ctime !='' ">
+				and date_format(ctime,'%Y-%m-%d')=date_format(#{ctime},'%Y-%m-%d') 
+			</if>
+		</where>
+			 
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}	
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>		
+		</if>
+		
+	</select>
+	<update id="updatePlatOrderHistory" parameterType="map">
+	      		update om_order_history set 
+			<if test="orderStatus != null and orderStatus !='' ">
+				order_status =#{orderStatus}    ,
+			</if> 
+			<if test="message != null and message !='' ">
+				message =#{message}    ,
+			</if> 
+			id = id 
+		where id = #{id}
+	</update>
+
+
+
+</mapper>

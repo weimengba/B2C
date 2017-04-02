@@ -1,0 +1,24 @@
+/**
+ * description:宝贝详情
+ * author: 葛小雷
+ */
+$(function() {
+	'use strict';
+	var goodsDetailID=$.getUrlId();
+	$(document).on(
+		"pageInit",
+		"#om-goodsdetails",
+		function(e, id, page) {			
+			$.omAjax({
+				type : "post",
+				url : "pub/goods/goodsDetailById.do",
+				data : {gid:goodsDetailID},
+				success : function(data) {
+					console.log('success'+data.datas[0].nickname+"另一个数组的信息："+data.data[0].content);
+					$.each(data.data,function(i,d){
+						console.log(d.title);
+					})
+				}
+			});
+		});
+	});

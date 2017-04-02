@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.PlatCustomerAddressDAO">
+	
+	<!-- 根据条件查询收货地址（未删除） -->
+	<select id="selectCustomerAddress" resultType="map" parameterType="map">
+	    select 
+	       id,
+	       customer_id as customerId,
+		   consignee,
+		   mobile,
+		   address,
+		   postcodes,
+		   ctime, 
+		   utime  
+		from customer_address_v
+		<where> 
+		   <if test="customerId != null and customerId !='' ">
+		      and customer_id=#{customerId} 
+		   </if>
+		   <if test="consignee != null and consignee !='' ">
+		      and consignee like concat('%',#{consignee},'%') 
+		   </if>
+		   <if test="mobile != null and mobile !='' ">
+		      and mobile like concat('%',#{mobile},'%')
+		   </if>
+		   <if test="postcodes != null and postcodes !='' ">
+		      and postcodes like concat('%',#{postcodes},'%')
+		   </if>
+		</where>
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+	</select>
+    
+    <!-- 添加收货地址 -->
+    <insert id="insertCustomerAddress" parameterType="map">
+		insert into om_customer_address (
+		   <if test="customerId != null and customerId !='' ">
+		   customer_id,
+		   </if>
+		   <if test="consignee != null and consignee !='' ">
+		   consignee,
+		   </if>
+		   <if test="mobile != null and mobile !='' ">
+		   mobile,
+		   </if>
+		   <if test="address != null and address !='' ">
+		   address,
+		   </if>
+		   <if test="postcodes != null and postcodes !='' ">
+		   postcodes,
+		   </if>
+		   ctime)  
+		 values (
+		    <if test="customerId != null and customerId !='' ">
+		    #{customerId},
+		    </if>
+		    <if test="consignee != null and consignee !='' ">
+		    #{consignee},
+		    </if>
+		    <if test="mobile != null and mobile !='' ">
+		    #{mobile},
+		    </if>
+		    <if test="address != null and address !='' ">
+		    #{address},
+		    </if>
+		    <if test="postcodes != null and postcodes !='' ">
+		    #{postcodes},
+		    </if>
+		    now())
+	</insert>
+	
+	<!-- 根据id修改收货地址信息 -->
+	<update id="updateCustomerAddressById" parameterType="map">
+
+		update om_customer_address set
+		   <if test="consignee != null and consignee !='' ">
+		   consignee=#{consignee},
+		   </if> 
+		   <if test="mobile != null and mobile !='' ">
+		   mobile=#{mobile}, 
+		   </if>
+		   <if test="address != null and address !='' ">
+		   address=#{address}, 
+		   </if>
+		   <if test="postcodes != null and postcodes !='' ">
+		   postcodes=#{postcodes}, 
+		   </if>
+		   id=#{id}
+		where id = #{id}
+	</update>
+
+</mapper>

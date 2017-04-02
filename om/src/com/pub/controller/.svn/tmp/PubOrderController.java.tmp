@@ -1,0 +1,100 @@
+package com.pub.controller;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.commons.lang.SystemUtils;
+import org.junit.Test;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.pub.service.PubOrderService;
+import com.pub.service.PubOrderViewService;
+import com.util.MM;
+import com.util.MMUtil;
+import com.util.SysUtil;
+
+@Controller
+@RequestMapping("/order")
+public class PubOrderController extends BasePubController {
+
+	
+	/**
+	 * 测试查询
+	 * 
+	 * @return
+	 */
+	@RequestMapping("/orderList")
+	public ModelAndView t3() {
+		MM mm = MMUtil.getMM();	
+		System.out.println(mm.get("remark")); 
+		ModelAndView mav = new ModelAndView();		
+		PageHelper.startPage(MMUtil.getCurrent(),MMUtil.getPageSize());		
+		List<Map<String, Object>> data = pubOrderService.selectOrder();
+		PageInfo page=new PageInfo(data);
+		mav.addObject("data", page);
+		mav.setViewName("/pub/order/orderList");
+		return mav;
+	}
+	@RequestMapping("/tianjia")
+	public ModelAndView t4() {
+		MM mm = MMUtil.getMM();
+		ModelAndView mav = new ModelAndView();
+			mm.put("c_tb", "order");
+			Object data =commonService.commonGetDataById();
+			mav.addObject("object", data);
+		
+		mav.setViewName("/pub/order/AddOrder");
+		return mav;
+	}
+	@RequestMapping("/tianjia1")
+	public ModelAndView t6() {
+		ModelAndView mav = new ModelAndView();
+		 mav.setViewName("/pub/order/AddOrder");		
+		return mav;
+	}
+	@RequestMapping("/AddOrder")
+	public ModelAndView t5() {
+		MM mm = MMUtil.getMM();			
+		ModelAndView mav = new ModelAndView();			
+		if (mm.get("id") != null) {	
+		  pubOrderService.updateOrderByid();
+		}else{			   	
+	 	  pubOrderService.insertOrder();	 
+	     }		
+		 mav.setViewName("redirect:/order/orderList.do");
+		return mav;
+	}	
+	
+	@RequestMapping("/DeleteOrder")
+	public ModelAndView Delete() {
+		MM mm = MMUtil.getMM();
+		ModelAndView mav = new ModelAndView();
+		if (mm.get("id") != null) {
+			mm.put("c_tb", "order");
+			Object data = commonService.updateCommonDeleteById();
+		}
+		mav.setViewName("redirect:/order/orderList.do");
+		return mav;
+	}
+	@RequestMapping("/OrderView")
+	@ResponseBody  //转换成json
+	public Object OrderView() {
+	   MM mm=MMUtil.getMM();	
+	   ModelAndView mav = new ModelAndView();
+	   mm.put("customer_id", 20);	 
+	    PageHelper.startPage(MMUtil.getCurrent(), MMUtil.getPageSize());
+		List data = pubOrderViewService.OrderView();	
+		PageInfo page = new PageInfo(data);
+		return page;
+	   
+	}
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.platform.dao.PlatCommonLogDAO">
+
+	<!-- 插入日志数据 -->
+	<insert id="insertLog" parameterType="map">
+		insert into om_common_log(	
+			type,
+			operator_id,		
+			operator_type,		
+			operator_time,		
+			ctime
+		)values(
+			#{type},
+			#{mm_mid},
+			#{operatorType},
+			#{operatorTime},
+			#{ctime}
+		)
+	
+	</insert>
+	
+	<!-- 按ID跟新日志数据 -->
+	<update id="updateLogById" parameterType="map">
+		update om_common_log set 
+		<if test="type != null and type !='' ">
+			type,
+		</if>
+		<if test="operatorId != null and operatorId !='' ">
+			operator_id=#{operatorId},
+		</if>
+		<if test="operatorType != null and operatorType !='' ">
+			operator_type=#{operatorType},
+		</if>
+		<if test="operatorTime != null and operatorTime !='' ">
+			operator_time=#{operatorTime},
+		</if>
+			ctime
+		where id=#{id}	
+		
+	</update>
+	
+	<!-- 根据条件查询日志表内所有数据 -->
+	<select id="selectLog" parameterType="map" resultType="map">
+		select 
+			id					as		id			,
+			type				as		type			,
+			operator_id			as		operatorId		,
+			operator_type		as		operatorType	,
+			operator_time		as		operatorTime	,
+			ctime				as		ctime			,
+			utime				as		utime			,
+			is_del				as		isDel
+		from common_log_v 
+		<where>
+			<if test="type != null and type !=''">
+				type=#{type}
+			</if>
+			<if test="operatorId != null and operatorId !=''">
+				operator_id=#{operatorId}
+			</if>
+			<if test="operatorType != null and operatorType !=''">
+				operator_type=#{operatorType}
+			</if>
+			<if test="operatorTime != null and operatorTime !=''">
+				operator_time=#{operatorTime}
+			</if>
+		</where>
+		<if test="commonOrder != null and commonOrder !='' ">
+			order by ${commonOrder}
+			<if test="commonDesc != null and commonDesc !='' ">
+				desc
+			</if>
+		</if>
+	</select>
+</mapper>
